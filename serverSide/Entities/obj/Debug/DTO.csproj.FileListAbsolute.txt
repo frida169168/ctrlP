@@ -1,0 +1,120 @@
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\Entities.pdb
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.dll.config
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.dll
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\Entities.pdb
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.dll
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.pdb
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\DAL.dll.config
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+E:\_FinalProject\12.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+E:\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\Entities.dll
+E:\_FinalProject\12.05.19\serverSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\20.05.2019\serverSide\Entities\obj\Debug\Entities.pdb
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\Entities.dll.config
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\Entities.dll
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\Entities.pdb
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\DAL.dll
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.dll
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\DAL.pdb
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\DAL.dll.config
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.xml
+E:\ServerSide\20.05.2019\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\ServerSide\20.05.2019\serverSide\Entities\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\ServerSide\20.05.2019\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\ServerSide\20.05.2019\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+E:\ServerSide\20.05.2019\serverSide\Entities\obj\Debug\Entities.dll
+E:\ServerSide\20.05.2019\serverSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\29.05.19\serverSide\Entities\obj\Debug\Entities.pdb
+E:\29.05.19\serverSide\Entities\bin\Debug\Entities.dll.config
+E:\29.05.19\serverSide\Entities\bin\Debug\Entities.dll
+E:\29.05.19\serverSide\Entities\bin\Debug\Entities.pdb
+E:\29.05.19\serverSide\Entities\bin\Debug\DAL.dll
+E:\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+E:\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\29.05.19\serverSide\Entities\bin\Debug\DAL.pdb
+E:\29.05.19\serverSide\Entities\bin\Debug\DAL.dll.config
+E:\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+E:\29.05.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\29.05.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\29.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\29.05.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+E:\29.05.19\serverSide\Entities\obj\Debug\Entities.dll
+E:\29.05.19\serverSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\Entities\obj\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.pdb

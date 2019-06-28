@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="controlPrintModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Deposit">
+    <Key>
+      <PropertyRef Name="depositId" />
+    </Key>
+    <Property Name="depositId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="Int32" />
+    <Property Name="depositDate" Type="DateTime" Precision="3" />
+    <Property Name="depositAmount" Type="Double" />
+    <NavigationProperty Name="User" Relationship="Self.fk_constraint12" FromRole="Deposit" ToRole="User" />
+  </EntityType>
+  <EntityType Name="EntityType">
+    <Key>
+      <PropertyRef Name="entityTypeId" />
+    </Key>
+    <Property Name="entityTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entityTypeDescription" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.fk_constraint1" FromRole="EntityType" ToRole="User" />
+  </EntityType>
+  <EntityType Name="PrintHistory">
+    <Key>
+      <PropertyRef Name="printHistoryId" />
+    </Key>
+    <Property Name="printHistoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="Int32" />
+    <Property Name="datePrint" Type="DateTime" Precision="3" />
+    <Property Name="costPrint" Type="Double" />
+    <Property Name="isColorFull" Type="Boolean" />
+    <Property Name="sumOfPages" Type="Int32" />
+    <Property Name="printerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.fk_constraint6" FromRole="PrintHistory" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Specialization">
+    <Key>
+      <PropertyRef Name="specId" />
+    </Key>
+    <Property Name="specId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="specName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="specKindId" Type="Int32" />
+    <NavigationProperty Name="UserToSpecs" Relationship="Self.FK__Individua__specI__7B5B524B" FromRole="Specialization" ToRole="UserToSpec" />
+    <NavigationProperty Name="SpecializationKind" Relationship="Self.fk_constraint2" FromRole="Specialization" ToRole="SpecializationKind" />
+  </EntityType>
+  <EntityType Name="SpecializationKind">
+    <Key>
+      <PropertyRef Name="specKindId" />
+    </Key>
+    <Property Name="specKindId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="specKindName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Specializations" Relationship="Self.fk_constraint2" FromRole="SpecializationKind" ToRole="Specialization" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userTz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="entityTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Deposits" Relationship="Self.fk_constraint12" FromRole="User" ToRole="Deposit" />
+    <NavigationProperty Name="EntityType" Relationship="Self.fk_constraint1" FromRole="User" ToRole="EntityType" />
+    <NavigationProperty Name="PrintHistories" Relationship="Self.fk_constraint6" FromRole="User" ToRole="PrintHistory" />
+    <NavigationProperty Name="UserToSpecs" Relationship="Self.FK__Individua__indiv__7A672E12" FromRole="User" ToRole="UserToSpec" />
+  </EntityType>
+  <EntityType Name="UserToSpec">
+    <Key>
+      <PropertyRef Name="userId" />
+      <PropertyRef Name="specId" />
+    </Key>
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="specId" Type="Int32" Nullable="false" />
+    <Property Name="userTospecId" Type="Int32" />
+    <NavigationProperty Name="Specialization" Relationship="Self.FK__Individua__specI__7B5B524B" FromRole="UserToSpec" ToRole="Specialization" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Individua__indiv__7A672E12" FromRole="UserToSpec" ToRole="User" />
+  </EntityType>
+  <Association Name="fk_constraint12">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Deposit" Type="Self.Deposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="Deposit">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint1">
+    <End Role="EntityType" Type="Self.EntityType" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntityType">
+        <PropertyRef Name="entityTypeId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="entityTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint6">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="PrintHistory" Type="Self.PrintHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="PrintHistory">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__specI__7B5B524B">
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="1" />
+    <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialization">
+        <PropertyRef Name="specId" />
+      </Principal>
+      <Dependent Role="UserToSpec">
+        <PropertyRef Name="specId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint2">
+    <End Role="SpecializationKind" Type="Self.SpecializationKind" Multiplicity="0..1" />
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecializationKind">
+        <PropertyRef Name="specKindId" />
+      </Principal>
+      <Dependent Role="Specialization">
+        <PropertyRef Name="specKindId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__indiv__7A672E12">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="UserToSpec">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="controlPrintEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Deposits" EntityType="Self.Deposit" />
+    <EntitySet Name="EntityTypes" EntityType="Self.EntityType" />
+    <EntitySet Name="PrintHistories" EntityType="Self.PrintHistory" />
+    <EntitySet Name="Specializations" EntityType="Self.Specialization" />
+    <EntitySet Name="SpecializationKinds" EntityType="Self.SpecializationKind" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserToSpecs" EntityType="Self.UserToSpec" />
+    <AssociationSet Name="fk_constraint12" Association="Self.fk_constraint12">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Deposit" EntitySet="Deposits" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint1" Association="Self.fk_constraint1">
+      <End Role="EntityType" EntitySet="EntityTypes" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint6" Association="Self.fk_constraint6">
+      <End Role="User" EntitySet="Users" />
+      <End Role="PrintHistory" EntitySet="PrintHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__specI__7B5B524B" Association="Self.FK__Individua__specI__7B5B524B">
+      <End Role="Specialization" EntitySet="Specializations" />
+      <End Role="UserToSpec" EntitySet="UserToSpecs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint2" Association="Self.fk_constraint2">
+      <End Role="SpecializationKind" EntitySet="SpecializationKinds" />
+      <End Role="Specialization" EntitySet="Specializations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="Self.FK__Individua__indiv__7A672E12">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserToSpec" EntitySet="UserToSpecs" />
+    </AssociationSet>
+    <EntitySet Name="Prices" EntityType="controlPrintModel.Price" />
+    <EntitySet Name="SizeOfPages" EntityType="controlPrintModel.SizeOfPage" />
+    <AssociationSet Name="fk_constraint5" Association="controlPrintModel.fk_constraint5">
+      <End Role="SizeOfPage" EntitySet="SizeOfPages" />
+      <End Role="Price" EntitySet="Prices" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="priceId" />
+    </Key>
+    <Property Name="priceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sizeId" Type="Int32" />
+    <Property Name="priceBlackWhite" Type="Double" />
+    <Property Name="priceColorFull" Type="Double" />
+    <NavigationProperty Name="SizeOfPage" Relationship="controlPrintModel.fk_constraint5" FromRole="Price" ToRole="SizeOfPage" />
+  </EntityType>
+  <EntityType Name="SizeOfPage">
+    <Key>
+      <PropertyRef Name="sizeId" />
+    </Key>
+    <Property Name="sizeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sizeName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Prices" Relationship="controlPrintModel.fk_constraint5" FromRole="SizeOfPage" ToRole="Price" />
+  </EntityType>
+  <Association Name="fk_constraint5">
+    <End Type="controlPrintModel.SizeOfPage" Role="SizeOfPage" Multiplicity="0..1" />
+    <End Type="controlPrintModel.Price" Role="Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SizeOfPage">
+        <PropertyRef Name="sizeId" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="sizeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

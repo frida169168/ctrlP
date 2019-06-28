@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="controlPrintModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Deposit">
+    <Key>
+      <PropertyRef Name="depositId" />
+    </Key>
+    <Property Name="depositId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" />
+    <Property Name="depositDate" Type="datetime" />
+    <Property Name="depositAmount" Type="float" />
+  </EntityType>
+  <EntityType Name="EntityType">
+    <Key>
+      <PropertyRef Name="entityTypeId" />
+    </Key>
+    <Property Name="entityTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="entityTypeDescription" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="priceId" />
+    </Key>
+    <Property Name="priceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sizeId" Type="int" />
+    <Property Name="priceBlackWhite" Type="float" />
+    <Property Name="priceColorFull" Type="float" />
+  </EntityType>
+  <EntityType Name="PrintHistory">
+    <Key>
+      <PropertyRef Name="printHistoryId" />
+    </Key>
+    <Property Name="printHistoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" />
+    <Property Name="datePrint" Type="datetime" />
+    <Property Name="costPrint" Type="float" />
+    <Property Name="isColorFull" Type="bit" />
+    <Property Name="sumOfPages" Type="int" />
+    <Property Name="printerName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SizeOfPage">
+    <Key>
+      <PropertyRef Name="sizeId" />
+    </Key>
+    <Property Name="sizeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sizeName" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Specialization">
+    <Key>
+      <PropertyRef Name="specId" />
+    </Key>
+    <Property Name="specId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="specName" Type="nvarchar" MaxLength="30" />
+    <Property Name="specKindId" Type="int" />
+  </EntityType>
+  <EntityType Name="SpecializationKind">
+    <Key>
+      <PropertyRef Name="specKindId" />
+    </Key>
+    <Property Name="specKindId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="specKindName" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userTz" Type="nvarchar" MaxLength="50" />
+    <Property Name="userName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="entityTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserToSpec">
+    <Key>
+      <PropertyRef Name="userId" />
+      <PropertyRef Name="specId" />
+    </Key>
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="specId" Type="int" Nullable="false" />
+    <Property Name="userTospecId" Type="int" />
+  </EntityType>
+  <Association Name="FK__Individua__indiv__7A672E12">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="UserToSpec">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Individua__specI__7B5B524B">
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="1" />
+    <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialization">
+        <PropertyRef Name="specId" />
+      </Principal>
+      <Dependent Role="UserToSpec">
+        <PropertyRef Name="specId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint1">
+    <End Role="EntityType" Type="Self.EntityType" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntityType">
+        <PropertyRef Name="entityTypeId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="entityTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint12">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Deposit" Type="Self.Deposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="Deposit">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint2">
+    <End Role="SpecializationKind" Type="Self.SpecializationKind" Multiplicity="0..1" />
+    <End Role="Specialization" Type="Self.Specialization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecializationKind">
+        <PropertyRef Name="specKindId" />
+      </Principal>
+      <Dependent Role="Specialization">
+        <PropertyRef Name="specKindId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint5">
+    <End Role="SizeOfPage" Type="Self.SizeOfPage" Multiplicity="0..1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SizeOfPage">
+        <PropertyRef Name="sizeId" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="sizeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_constraint6">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="PrintHistory" Type="Self.PrintHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="PrintHistory">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="controlPrintModelStoreContainer">
+    <EntitySet Name="Deposit" EntityType="Self.Deposit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EntityType" EntityType="Self.EntityType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Price" EntityType="Self.Price" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrintHistory" EntityType="Self.PrintHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SizeOfPage" EntityType="Self.SizeOfPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Specialization" EntityType="Self.Specialization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpecializationKind" EntityType="Self.SpecializationKind" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserToSpec" EntityType="Self.UserToSpec" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserToSpec].[userId] AS [userId], 
+    [UserToSpec].[specId] AS [specId], 
+    [UserToSpec].[userTospecId] AS [userTospecId]
+    FROM [dbo].[UserToSpec] AS [UserToSpec]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="Self.FK__Individua__indiv__7A672E12">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserToSpec" EntitySet="UserToSpec" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Individua__specI__7B5B524B" Association="Self.FK__Individua__specI__7B5B524B">
+      <End Role="Specialization" EntitySet="Specialization" />
+      <End Role="UserToSpec" EntitySet="UserToSpec" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint1" Association="Self.fk_constraint1">
+      <End Role="EntityType" EntitySet="EntityType" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint12" Association="Self.fk_constraint12">
+      <End Role="User" EntitySet="User" />
+      <End Role="Deposit" EntitySet="Deposit" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint2" Association="Self.fk_constraint2">
+      <End Role="SpecializationKind" EntitySet="SpecializationKind" />
+      <End Role="Specialization" EntitySet="Specialization" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint5" Association="Self.fk_constraint5">
+      <End Role="SizeOfPage" EntitySet="SizeOfPage" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="fk_constraint6" Association="Self.fk_constraint6">
+      <End Role="User" EntitySet="User" />
+      <End Role="PrintHistory" EntitySet="PrintHistory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

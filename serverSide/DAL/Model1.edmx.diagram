@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="01fbb8ab95cd43009e3bd68ba077c72f" Name="Diagram1">
+        <EntityTypeShape EntityType="controlPrintModel.Deposit" Width="1.5" PointX="9.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.EntityType" Width="1.5" PointX="1.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.PrintHistory" Width="1.5" PointX="2.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.Specialization" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.SpecializationKind" Width="1.5" PointX="3.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.sysdiagram" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.User" Width="1.5" PointX="5.625" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlPrintModel.UserToSpec" Width="1.5" PointX="9.875" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="controlPrintModel.fk_constraint12" ManuallyRouted="false" />
+        <AssociationConnector Association="controlPrintModel.fk_constraint1" ManuallyRouted="false" />
+        <AssociationConnector Association="controlPrintModel.fk_constraint6" ManuallyRouted="false" />
+        <AssociationConnector Association="controlPrintModel.FK__Individua__specI__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="controlPrintModel.fk_constraint2" ManuallyRouted="false" />
+        <AssociationConnector Association="controlPrintModel.FK__Individua__indiv__7A672E12" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="controlPrintModel.Price" Width="1.5" PointX="7.625" PointY="7.875" />
+        <EntityTypeShape EntityType="controlPrintModel.SizeOfPage" Width="1.5" PointX="5.375" PointY="8.125" />
+        <AssociationConnector Association="controlPrintModel.fk_constraint5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

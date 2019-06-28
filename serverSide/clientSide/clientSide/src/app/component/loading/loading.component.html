@@ -1,0 +1,6 @@
+Hello {{user.userName}}
+<p>Your balance: {{userBalance}}</p>
+<form (ngSubmit)="onLoad()" #loginForm="ngForm">
+<input type="number" name="amount" #amount [(ngModel)]="deposit.depositAmount" placeholder="הכנס סכום להטענה"/>
+<button type="submit" name="submit">הטען</button>
+</form>
