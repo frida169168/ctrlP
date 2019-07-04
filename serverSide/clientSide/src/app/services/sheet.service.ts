@@ -14,20 +14,15 @@ public  baseURL:String=environment.apiUrl+"/PrintingSheet";
   constructor(private http:HttpClient) { }
   getSheets():Observable<sheet[]>{
     return this.http.get<sheet[]>(this.baseURL+"/GetSheets");
-  }
-
-}
-// export class UserService {
-//   public user:User;
-//   public  baseURL:String=environment.apiUrl+"user";
+  } 
   
-//   constructor(private http :HttpClient) { }
+  deleteSheet(sheet){
+      return this.http.delete(this.baseURL+"/RemoveSheet/"+sheet)
+    }
+  
+  
+   
+   
+}
 
-//   getUserByTz(user):Observable<User>{
-//     return this.http.post<User>(this.baseURL+"api/User/login",user)
-//   }
-
-//   getBalanceByUser(user):Observable<number>{
-//     return this.http.post<number>(this.baseURL+"api/User/getbalance",user)
-//  } }
 

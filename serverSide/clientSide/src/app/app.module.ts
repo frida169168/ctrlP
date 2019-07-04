@@ -34,7 +34,10 @@ import { SpecService } from './services/spec.service';
     MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // MatDialog,
+    // MatDialogRef,
+    // MAT_DIALOG_DATA
     
   ],
   providers: [UserService,SheetService,SpecService],

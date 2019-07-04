@@ -10,7 +10,8 @@ const modules = [
   MatInputModule,
   ReactiveFormsModule,
   MatAutocompleteModule,
-  MatFormFieldModule  
+  MatFormFieldModule,
+  //MAT_DIALOG_DATA 
  ]
 
 @NgModule({
