@@ -31,22 +31,28 @@ namespace WebServiceControlPrint.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
         }
-        [HttpPost]
-        [Route("a")]///לשנות שיקבל USER
+        //[HttpPost]
+        //[Route("a")]///לשנות שיקבל USER
 
-        public HttpResponseMessage a()
-        {
+        //public HttpResponseMessage a()
+        //{
           
-                return Request.CreateResponse(HttpStatusCode.OK);
+        //        return Request.CreateResponse(HttpStatusCode.OK);
         
-        }
-        [HttpPost]
-        [Route("GetAllUsers")]///לשנות שיקבל USER
+        //}
+        //[HttpPost]
+        //[Route("GetAllUsers")]///לשנות שיקבל USER
 
-        public HttpResponseMessage getg(User user)
+        //public HttpResponseMessage getg(User user)
+        //{
+
+        //    return Request.CreateResponse(HttpStatusCode.OK, new List<UserDTO>() { new UserDTO() { userId = 1, userName = "chana" }, new UserDTO() { userId = 2, userName = "ggg" } });
+        //}
+        [HttpGet]
+        [Route("getStudents")]
+        public HttpResponseMessage getStudents()
         {
-
-            return Request.CreateResponse(HttpStatusCode.OK, new List<UserDTO>() { new UserDTO() { userId = 1, userName = "chana" }, new UserDTO() { userId = 2, userName = "ggg" } });
+            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.getStudents());
         }
         [HttpPost]
         [Route("getBalance")]

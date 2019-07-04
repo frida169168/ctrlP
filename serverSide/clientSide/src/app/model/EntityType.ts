@@ -1,4 +1,6 @@
+import { eType } from "./eType";
+
 export class EntityType{
-    entityTypeId:number;
+    entityTypeId:eType;
     entityTypeDescription:String;
 }

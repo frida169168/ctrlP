@@ -39,7 +39,7 @@ namespace WebServiceControlPrint.Controllers
         public HttpResponseMessage RemoveSheet(int sheetId)
         {
 
-            PrintingSheetLogic.DeleteSheet(sheetId);
+            //PrintingSheetLogic.DeleteSheet(sheetId);
             return Request.CreateResponse(HttpStatusCode.OK);
 
         }

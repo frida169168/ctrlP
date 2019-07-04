@@ -86,3 +86,21 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\BL\obj\Debug\BL.csproj.CopyComplete
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\BL\obj\Debug\BL.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\BL\obj\Debug\BL.pdb
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\BL.dll.config
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\BL.dll
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\BL.pdb
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\DAL.dll
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\Entities.dll
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\EntityFramework.dll
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\DAL.pdb
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\DAL.dll.config
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\Entities.pdb
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\Entities.dll.config
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\EntityFramework.xml
+D:\Git_repository\ctrlP\serverSide\BL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git_repository\ctrlP\serverSide\BL\obj\Debug\BL.csprojAssemblyReference.cache
+D:\Git_repository\ctrlP\serverSide\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\Git_repository\ctrlP\serverSide\BL\obj\Debug\BL.csproj.CopyComplete
+D:\Git_repository\ctrlP\serverSide\BL\obj\Debug\BL.dll
+D:\Git_repository\ctrlP\serverSide\BL\obj\Debug\BL.pdb

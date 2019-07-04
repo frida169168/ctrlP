@@ -116,3 +116,15 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.pdb
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll.config
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.pdb
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.dll
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.xml
+D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
+D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb

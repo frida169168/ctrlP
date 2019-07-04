@@ -12,11 +12,11 @@ namespace BL.Casting
     {
         public EntityTypeDTO CastToDTO(EntityType entity)
         {
-            return new EntityTypeDTO() { entityTypeId = entity.entityTypeId, entityTypeDescription = entity.entityTypeDescription };
+            return new EntityTypeDTO() { entityTypeId =(eType)entity.entityTypeId, entityTypeDescription = entity.entityTypeDescription };
         }
         public EntityType CastToDAL(EntityTypeDTO entity)
-        {
-            return new EntityType() { entityTypeId = entity.entityTypeId, entityTypeDescription = entity.entityTypeDescription };
+        {          
+            return new EntityType() { entityTypeId = (int)entity.entityTypeId, entityTypeDescription = entity.entityTypeDescription };
         }
     }
 }
