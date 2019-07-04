@@ -31,5 +31,15 @@ export class UserService {
   getPrinytHistory(user):Observable<PrintHistory[]>{
     return this.http.post<PrintHistory[]>(this.baseURL+"/PrintHistory/PrintHistory",user)
   }
+ checkOldPass(oldPassWord){
+   return oldPassWord==this.user.userTz;
+ }
+ validPass(newPass,validPass){
+return newPass=validPass;
+ }
+updatePass(newPassWord):Observable<boolean>{
 
+  this.user.userTz=newPassWord;
+  return  this.http.post<boolean>(this.baseURL+" ",this.user); 
+}
 }

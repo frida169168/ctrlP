@@ -118,3 +118,18 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.pdb
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll.config
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.pdb
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.dll
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.dll
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.pdb
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.dll.config
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.xml
+D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.dll
+D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.pdb

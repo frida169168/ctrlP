@@ -2,7 +2,13 @@ import { Component, OnInit ,Inject} from '@angular/core';
 import { SheetService } from 'src/app/services/sheet.service';
 import { Router } from '@angular/router';
 import { sheet } from 'src/app/model/sheet';
-//import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { EditComponent } from '../edit/edit.component'
+export interface DialogData {
+  sizeName: string;
+  priceColorFull: number;
+  priceBlackWhite:number;
+}
 @Component({
   selector: 'app-sheet-setting',
   templateUrl: './sheet-setting.component.html',
@@ -10,88 +16,41 @@ import { sheet } from 'src/app/model/sheet';
 })
 export class SheetSettingComponent implements OnInit {
 
-  constructor(private sheetService:SheetService,private route:Router) { }
+  constructor(private sheetService:SheetService,private route:Router,public dialog: MatDialog) { }
   public sheets :sheet[]=[];
   public sheet:sheet;
+ 
+
   ngOnInit() {
     this.showSheets();
    
   }
-
+ 
   showSheets(){
     this.sheetService.getSheets().subscribe(res=>{
       alert("sucsess");
-      debugger;
-      for (const resValue of res) {
      
+      for (const resValue of res) {
         this.sheets.push(resValue);
       }
-      debugger;
-     this.sheets=res;
-  
-     debugger;
     },err=>{
       alert("error");
     })
   }
+
   deleteSheet(sheetId){
-this.sheetService.deleteSheet(sheetId).subscribe(res=>{
-  alert("נמחק בהצלחה")
-
-}),err=>{
-  alert("לא נמחק")
-}
+   this.sheetService.deleteSheet(sheetId).subscribe(res=>{ alert("נמחק בהצלחה")}),err=>{  alert("לא נמחק")}
   }
-}
-
-// import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
-// export interface DialogData {
-//   animal: string;
-//   name: string;
-// }
-
-// /**
-//  * @title Dialog Overview
-//  */
-// @Component({
-//   selector: 'dialog-overview-example',
-//   templateUrl: 'dialog-overview-example.html',
-//   styleUrls: ['dialog-overview-example.css'],
-// })
-// export class DialogOverviewExample {
-
-//   animal: string;
-//   name: string;
-
-//   constructor(public dialog: MatDialog) {}
-
-//   openDialog(): void {
-//     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-//       width: '250px',
-//       data: {name: this.name, animal: this.animal}
-//     });
-
-//     dialogRef.afterClosed().subscribe(result => {
-//       console.log('The dialog was closed');
-//       this.animal = result;
-//     });
-//   }
-
-// }
-
-// @Component({
-//   selector: 'dialog-overview-example-dialog',
-//   templateUrl: 'dialog-overview-example-dialog.html',
-// })
-// export class DialogOverviewExampleDialog {
-
-//   constructor(
-//     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-//     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
-//   onNoClick(): void {
-//     this.dialogRef.close();
-//   }
-
-// }
+openDialog(sheet): void {
+ 
+  const dialogRef = this.dialog.open(EditComponent, {
+    width: '250px',height:'250px',
+    data: {name: sheet.SizeOfPage.nameSize, priceBlackWhite: sheet.price.priceBlackWhite
+      ,priceColorFull:sheet.price.priceColorFull}
+    // data: {sheet: this.sheet}
+  });
+  dialogRef.afterClosed().subscribe(result => {
+    console.log('The dialog was closed');
+    this.sheet = result;//???????
+  });
+}}

@@ -1,15 +1,9 @@
 
 <div *ngFor="let sheet of sheets">
-  <h1 >{{(sheet.SizeOfPage.sizeName)}}</h1>
-  <p>צבועני:  {{sheet.price.priceColorFull}}</p>
-  <p>שחור לבן:  {{sheet.price.priceBlackWhite}}</p>
+  <h1  >{{(sheet.SizeOfPage.nameSize)}}</h1>
+  <p  >צבועני:  {{sheet.price.priceColorFull}}</p>
+  <p >שחור לבן:  {{sheet.price.priceBlackWhite}}</p>
   <button value="מחק" (click)="deleteSheet(sheet.SizeOfPage.sizeId)"> מחק</button>
-  <button mat-raised-button (click)="openDialog()">עריכה</button>
+  <button mat-raised-button (click)="openDialog(sheet)">עריכה</button>
 </div>
-<!-- <ol>
-  <li>
 
-  <li *ngIf="animal">
-    You chose: <i>{{animal}}</i>
-  </li>
-</ol> -->

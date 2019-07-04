@@ -11,10 +11,12 @@ import { AppRoutingModule }from './app-routing/app-routing.module';
 import { StaffComponent } from './component/staff/staff.component';
 import { SheetSettingComponent } from './component/sheet-setting/sheet-setting.component';
 import { LoadingStaffComponent } from './component/loading-staff/loading-staff.component';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { SheetService } from './services/sheet.service';
 import { SpecService } from './services/spec.service';
+import { SetStaffPaswordComponent } from './set-staff-pasword/set-staff-pasword.component';
+import { EditComponent } from './component/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SpecService } from './services/spec.service';
     LoadingComponent,
     StaffComponent,
     SheetSettingComponent,
-    LoadingStaffComponent 
+    LoadingStaffComponent,
+    SetStaffPaswordComponent ,
+    EditComponent
   ],
   imports: [
     BrowserModule,
@@ -35,10 +39,10 @@ import { SpecService } from './services/spec.service';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    // MatDialog,
-    // MatDialogRef,
-    // MAT_DIALOG_DATA
-    
+    MatDialogModule
+  ],
+  entryComponents:[
+  EditComponent
   ],
   providers: [UserService,SheetService,SpecService],
   bootstrap: [AppComponent]

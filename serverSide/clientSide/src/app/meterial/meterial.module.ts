@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule} from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule, MatDialog, MAT_DIALOG_DATA} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -11,7 +11,8 @@ const modules = [
   ReactiveFormsModule,
   MatAutocompleteModule,
   MatFormFieldModule,
-  //MAT_DIALOG_DATA 
+  MatDialog,
+MAT_DIALOG_DATA 
  ]
 
 @NgModule({
