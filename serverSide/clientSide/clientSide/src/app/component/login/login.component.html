@@ -1,7 +1,0 @@
-<form (ngSubmit)="onLogin()" #loginForm="ngForm"  class="md-form">
-    <label for="pass">password</label>
-    <input type="password" name="password" id="pass" #password [(ngModel)]="user.userTz" required>    
-    <button type="submit" name="submit" [disabled]="!loginForm.form.valid">כניסה</button>
-</form>
-
-<!-- <mdb-error *ngIf="input.invalid && (input.dirty || input.touched)">Input invalid</mdb-error> ??-->

@@ -4,6 +4,7 @@ import { User } from 'src/app/model/User';
 import { UserService } from 'src/app/services/user.service';
 import { NodeCompatibleEventEmitter } from 'rxjs/internal/observable/fromEvent';
 import { Deposit } from 'src/app/model/Deposit';
+import { PrintHistory } from 'src/app/model/PrintHistory';
 
 @Component({
   selector: 'app-loading',
@@ -13,6 +14,7 @@ import { Deposit } from 'src/app/model/Deposit';
 export class LoadingComponent implements OnInit {
   user:User;
   userBalance:number;
+  printHistory:PrintHistory[];
   @Input()
   deposit:Deposit=new Deposit();
   constructor(private userSer:UserService) { 
@@ -20,11 +22,16 @@ export class LoadingComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.user=  this.userSer.user;
+    this.getBalance();  
+  }
+
+  getBalance(){ 
+    this.user= this.userSer.user;
     this.userSer.getBalanceByUser(this.user).subscribe(res=>{
-      this.userBalance=res;
+    this.userBalance=res;
+    console.log(this.userBalance)
     },err=>{
-      this.userBalance=0//
+    alert("blance isnt work :(")
     }); 
   }
 
@@ -33,8 +40,19 @@ export class LoadingComponent implements OnInit {
     //this.deposit.depositDate=Date.now();????????????????????
     this.userSer.newDeposit(this.deposit).subscribe(res=>{
       alert("Is Loading")
+      this.userBalance+=res;
     },err=>{
       alert("error")
     });
   }
+
+  getPrintHostory(){
+    this.userSer.getPrinytHistory(this.user).subscribe(res=>{
+      this.printHistory=res;
+      alert("printHosrt works")
+    },err=>{
+      alert("printHosrt isnt works")
+
+    })
+  }  
 }

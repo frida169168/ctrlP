@@ -4,3 +4,5 @@ Hello {{user.userName}}
 <input type="number" name="amount" #amount [(ngModel)]="deposit.depositAmount" placeholder="הכנס סכום להטענה"/>
 <button type="submit" name="submit">הטען</button>
 </form>
+<button name="printHistory" (click)="getPrintHostory()">printHistory</button>
+{{printHistory.length}} printes

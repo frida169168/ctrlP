@@ -5,12 +5,15 @@ import { LoadingComponent } from '../component/loading/loading.component';
 import { LoginComponent } from '../component/login/login.component';
 import { StaffComponent } from '../component/staff/staff.component';
 import { SheetSettingComponent } from 'src/app/component/sheet-setting/sheet-setting.component';
+import { LoadingStaffComponent } from '../component/loading-staff/loading-staff.component';
+
 
 const appRoutes: Routes = [
-  { path: '', component: StaffComponent },//
+  { path: '', component: LoginComponent },
   { path: 'loading', component: LoadingComponent },  
   { path: 'staff', component:  StaffComponent },
-  { path: 'sheetSetting', component:  SheetSettingComponent }
+  { path: 'sheetSetting', component:  SheetSettingComponent },
+  { path: 'loadingStaff', component:LoadingStaffComponent}
 ];
 
 @NgModule({

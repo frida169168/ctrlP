@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Deposit } from '../model/Deposit';
+import { PrintHistory } from '../model/PrintHistory';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ import { Deposit } from '../model/Deposit';
 
 export class UserService {
   public user:User;
-  public  baseURL:String=environment.apiUrl+"api";
+  public baseURL:String=environment.apiUrl;
   
   constructor(private http :HttpClient) { }
 
@@ -23,8 +24,12 @@ export class UserService {
     return this.http.post<number>(this.baseURL+"/User/getBalance",user)
   }
 
-  newDeposit(deposit):Observable<Deposit>{
-    return this.http.post<Deposit>(this.baseURL+"/Deposit/NewDeposit",deposit)
+  newDeposit(deposit):Observable<any>{
+    return this.http.post<any>(this.baseURL+"/Deposit/NewDeposit",deposit)
+  }
+
+  getPrinytHistory(user):Observable<PrintHistory[]>{
+    return this.http.post<PrintHistory[]>(this.baseURL+"/PrintHistory/PrintHistory",user)
   }
 
 }

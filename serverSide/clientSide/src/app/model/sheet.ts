@@ -1,6 +1,6 @@
 export class sheet{
-id:number;
-nameSize:string;
-priceColorFull:number;
-priceBlackWhite:number;
-}
+    id:number;
+    nameSize:string;
+    priceColorFull:number;
+    priceBlackWhite:number;
+}    

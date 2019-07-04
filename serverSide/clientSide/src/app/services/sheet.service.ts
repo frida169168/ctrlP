@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SheetService {
 public sheet:sheet;
-public  baseURL:String=environment.apiUrl+"api/PrintingSheet";
+public  baseURL:String=environment.apiUrl+"/PrintingSheet";
   constructor(private http:HttpClient) { }
   getSheets():Observable<sheet[]>{
     return this.http.get<sheet[]>(this.baseURL+"/GetSheets");
