@@ -16,6 +16,10 @@ export class UserService {
   
   constructor(private http :HttpClient) { }
 
+  getStudents():Observable<User[]>{
+    return this.http.get<User[]>(this.baseURL+"/User/getStudents")
+  }
+
   getUserByTz(user):Observable<User>{
     return this.http.post<User>(this.baseURL+"/User/login",user)
   }

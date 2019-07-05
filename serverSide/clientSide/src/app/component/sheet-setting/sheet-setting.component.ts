@@ -28,11 +28,18 @@ export class SheetSettingComponent implements OnInit {
  
   showSheets(){
     this.sheetService.getSheets().subscribe(res=>{
+<<<<<<< HEAD
       alert("sucsess");
      
       for (const resValue of res) {
         this.sheets.push(resValue);
       }
+=======
+      alert("sucsess");      
+      for (const resValue of res) {     
+        this.sheets.push(resValue);
+      }  
+>>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
     },err=>{
       alert("error");
     })

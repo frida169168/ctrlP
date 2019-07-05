@@ -3,6 +3,12 @@ import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 import { User } from 'src/app/model/User';
 import { UserService } from 'src/app/services/user.service';
 import{Router, NavigationExtras}from '@angular/router'
+<<<<<<< HEAD
+=======
+import { eType } from 'src/app/model/eType';
+
+
+>>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -21,19 +27,16 @@ export class LoginComponent implements OnInit {
     this.userService.getUserByTz(this.user).subscribe(res=>{
       this.userService.user=res;
 
-      if(res.entityTypeId==1){
-        alert("staff");
+      if(res.entityTypeId==eType.staff){
         this.route.navigate(['/staff']);
       }
       else if(res.entityTypeId==2){
-        alert("teacher");
       }
       else{ 
-        alert("student");
         this.route.navigate(['/loading']);
       }
         },err=>{
-          alert("user dosen't exist")         
+          alert("משתמש אינו קיים")         
     })
       
   } 

@@ -118,6 +118,7 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\Entities\obj\Debug\Entities.pdb
+<<<<<<< HEAD
 D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll.config
 D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll
 D:\gi_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.pdb
@@ -133,3 +134,20 @@ D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInput
 D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
 D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.dll
 D:\gi_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.pdb
+=======
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll.config
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.dll
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\Entities.pdb
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.dll
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.dll
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.pdb
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\DAL.dll.config
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.xml
+D:\Git_repository\ctrlP\serverSide\Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Git_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Git_repository\ctrlP\serverSide\Entities\obj\Debug\DTO.csproj.CopyComplete
+D:\Git_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.dll
+D:\Git_repository\ctrlP\serverSide\Entities\obj\Debug\Entities.pdb
+>>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
