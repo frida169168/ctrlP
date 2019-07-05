@@ -42,7 +42,7 @@ export class SheetSettingComponent implements OnInit {
    this.sheetService.deleteSheet(sheetId).subscribe(res=>{ alert("נמחק בהצלחה")}),err=>{  alert("לא נמחק")}
   }
 openDialog(sheet): void {
- 
+
   const dialogRef = this.dialog.open(EditComponent, {
     width: '250px',height:'250px',
     data: {name: sheet.SizeOfPage.nameSize, priceBlackWhite: sheet.price.priceBlackWhite
