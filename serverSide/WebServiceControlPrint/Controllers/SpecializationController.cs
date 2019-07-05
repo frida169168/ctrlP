@@ -4,23 +4,25 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using DTO;
 
 namespace WebServiceControlPrint.Controllers
 {
 
     [RoutePrefix("api/Specialization")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class SpecializationController : ApiController
     {
        
-        [HttpPost]
+        [HttpGet]
         [Route("GetSpecializationList")]
 
         public HttpResponseMessage GetDetailsSpecialization()
         {
           List< SpecializationDTO >dTO = new List<SpecializationDTO>();
             dTO = BL.SpecializationLogic.GetSpecializationList();
-            if (dTO != null)
+            if (dTO != null&&dTO.Count!=0)
             {
                 return Request.CreateResponse(HttpStatusCode.OK, dTO);
             }

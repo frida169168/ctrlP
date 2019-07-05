@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
+    public enum eType { staff=1, teacher, student }
     public class EntityTypeDTO
     {
-        public int entityTypeId { get; set; }
+        public eType entityTypeId { get; set; }
         public string entityTypeDescription { get; set; }
     }
 }
