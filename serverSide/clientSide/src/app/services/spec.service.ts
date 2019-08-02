@@ -11,11 +11,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 export class SpecService {
 
-  public baseURL=environment.apiUrl+"/Specialization";
+  public baseURL=environment.apiUrl+"/specialization";
 
   constructor(private http:HttpClient) { }
 
   getAllSpec():Observable<Specialization[]>{
-    return this.http.get<Specialization[]>(this.baseURL+"/GetSpecializationList");
+    return this.http.get<Specialization[]>(this.baseURL+"/get-spec");
   }
 }

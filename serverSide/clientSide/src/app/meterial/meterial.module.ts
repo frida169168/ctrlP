@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule, MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule, MatDialog, MAT_DIALOG_DATA, MatPaginatorModule, MatListModule, MatTableModule, MatIcon, MatIconModule} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -12,7 +12,12 @@ const modules = [
   MatAutocompleteModule,
   MatFormFieldModule,
   MatDialog,
-MAT_DIALOG_DATA 
+  MatPaginatorModule,
+  MAT_DIALOG_DATA,
+  MatListModule,
+  MatTableModule,
+  MatIconModule,
+  MatCheckboxModule  
  ]
 
 @NgModule({
@@ -22,5 +27,3 @@ MAT_DIALOG_DATA
   declarations: []
 })
 export class MeterialModule { }
-
-

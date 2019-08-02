@@ -143,3 +143,15 @@ D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
 D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb
 >>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll.config
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.pdb
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.dll
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.xml
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
+D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb

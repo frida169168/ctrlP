@@ -8,21 +8,20 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class SheetService {
-public sheet:sheet;
-public  baseURL:String=environment.apiUrl+"/PrintingSheet";
+export class SheetService {  
+  
+  public  baseURL:String=environment.apiUrl+"/printingSheet";
+  public sheet:sheet; 
+
   constructor(private http:HttpClient) { }
+
   getSheets():Observable<sheet[]>{
-    return this.http.get<sheet[]>(this.baseURL+"/GetSheets");
+    return this.http.get<sheet[]>(this.baseURL+"/get-sheets");
   } 
   
   deleteSheet(sheet){
-      return this.http.delete(this.baseURL+"/RemoveSheet/"+sheet)
-    }
-  
-  
-   
-   
+      return this.http.delete(this.baseURL+"/remove-sheet/"+sheet)
+  }     
 }
 
 

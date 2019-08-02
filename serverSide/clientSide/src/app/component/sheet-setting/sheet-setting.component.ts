@@ -17,6 +17,7 @@ export interface DialogData {
 export class SheetSettingComponent implements OnInit {
 
   constructor(private sheetService:SheetService,private route:Router,public dialog: MatDialog) { }
+
   public sheets :sheet[]=[];
   public sheet:sheet;
  
@@ -27,13 +28,11 @@ export class SheetSettingComponent implements OnInit {
   }
  
   showSheets(){
-    this.sheetService.getSheets().subscribe(res=>{
-      alert("sucsess");     
+    this.sheetService.getSheets().subscribe(res=>{     
       for (const resValue of res) {
         this.sheets.push(resValue);
       }
     },err=>{
-      alert("error");
     })
   }
 

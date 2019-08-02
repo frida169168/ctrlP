@@ -2,7 +2,7 @@ import { eType } from "./eType";
 
 export class User{
     userId :number;
-    userTz:number;
+    userTz:string;
     userName:string;
     entityTypeId :eType;
 }
