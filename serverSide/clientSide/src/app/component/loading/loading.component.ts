@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { User } from 'src/app/model/User';
 import { UserService } from 'src/app/services/user.service';
 import { NodeCompatibleEventEmitter } from 'rxjs/internal/observable/fromEvent';
@@ -17,7 +17,7 @@ export class LoadingComponent implements OnInit {
   printHistory:PrintHistory[];
   @Input()
   deposit:Deposit=new Deposit();
-  constructor(private userSer:UserService, private router: Router) { 
+  constructor(private userSer:UserService) { 
 
   }
 
@@ -46,10 +46,13 @@ export class LoadingComponent implements OnInit {
     });
   }
 
-  PrintHostory(){
+  getPrintHostory(){
     this.userSer.getPrinytHistory(this.user).subscribe(res=>{
-      this.printHistory=res;      
-    },err=>{});
-    this.router.navigate(['viewPrintHistory',this.printHistory]);
+      this.printHistory=res;
+      alert("printHosrt works")
+    },err=>{
+      alert("printHosrt isnt works")
+
+    })
   }  
 }
