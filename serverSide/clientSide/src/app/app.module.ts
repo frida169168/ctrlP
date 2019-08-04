@@ -11,14 +11,15 @@ import { AppRoutingModule }from './app-routing/app-routing.module';
 import { StaffComponent } from './component/staff/staff.component';
 import { SheetSettingComponent } from './component/sheet-setting/sheet-setting.component';
 import { LoadingStaffComponent } from './component/loading-staff/loading-staff.component';
-import { MatFormFieldModule, MatInputModule, MatDialogModule, MatSelectModule, MatListOption, MatListModule, MatPaginatorModule, MatTableModule, MatButtonModule, MatIconModule, MatCheckboxModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatDialogModule, MatIconModule, MatCheckboxModule, MatSelectModule, MatTableModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatExpansionModule, MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { SheetService } from './services/sheet.service';
 import { SpecService } from './services/spec.service';
-import { SetStaffPaswordComponent } from './component/set-staff-pasword/set-staff-pasword.component';
+import { SetStaffPaswordComponent } from './set-staff-pasword/set-staff-pasword.component';
 import { EditComponent } from './component/edit/edit.component';
-import { StudentPipe } from './student.pipe';
-import { ViewPrintHistoryComponent } from './component/view-print-history/view-print-history.component';
+import { MatFileUploadModule } from 'angular-material-fileupload';
+import { DeleteSheetComponent } from './component/delete-sheet/delete-sheet.component';
+import { AddSheetComponent } from './component/add-sheet/add-sheet.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,8 @@ import { ViewPrintHistoryComponent } from './component/view-print-history/view-p
     LoadingStaffComponent,
     SetStaffPaswordComponent ,
     EditComponent,
-    StudentPipe,
-    ViewPrintHistoryComponent,
-    
+    DeleteSheetComponent,
+    AddSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -40,22 +40,34 @@ import { ViewPrintHistoryComponent } from './component/view-print-history/view-p
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatSelectModule,
-    MatListModule,
-    MatPaginatorModule,
-    MatListModule,
-    MatTableModule,
+    MatFileUploadModule,
+    MatIconModule,    
     MatButtonModule,
-    MatIconModule,
+    MatDialogModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+     MatInputModule,
+    MatTableModule,
     MatCheckboxModule,
-    MatAutocompleteModule
+     MatSelectModule,
+     FormsModule,
+     ReactiveFormsModule,
+     MatDatepickerModule,
+     MatNativeDateModule,
+     MatIconModule,
+     MatPaginatorModule,
+     MatExpansionModule,
+     MatTableModule
   ],
   entryComponents:[
-  EditComponent
+  EditComponent,
+  DeleteSheetComponent,
+  AddSheetComponent
   ],
   providers: [UserService,SheetService,SpecService],
   bootstrap: [AppComponent]

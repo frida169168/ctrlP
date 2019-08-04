@@ -1,0 +1,25 @@
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import {Sheet} from 'src/app/model/sheet'
+import { SheetService } from '../../services/sheet.service';
+
+@Component({
+  selector: 'app-delete-sheet',
+  templateUrl: './delete-sheet.component.html',
+  styleUrls: ['./delete-sheet.component.css']
+})
+export class DeleteSheetComponent implements OnInit {
+
+  constructor(public dialogRef: MatDialogRef<DeleteSheetComponent>,@Inject(MAT_DIALOG_DATA) public data: Sheet,private sheetService:SheetService ) { }
+
+  ngOnInit() {
+  }
+  onClickCancel():void{
+    this.dialogRef.close();
+  }
+  onClickDelete(sheetId:Number):void{
+  this.sheetService.deleteSheet(sheetId).subscribe(res=>{alert("נמחק בהצלחה")},err=>{"נכשל"});
+
+}
+}
+
