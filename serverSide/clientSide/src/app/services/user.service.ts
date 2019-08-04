@@ -11,45 +11,39 @@ import { PrintHistory } from '../model/PrintHistory';
 })
 
 export class UserService {
-  public user:User=new User;
-  
+  public user:User;
   public baseURL:String=environment.apiUrl;
   
-  constructor(private http :HttpClient) {
-    //להוריד אח"כ
-    this.user.userId=1;
-    this.user.userTz=0;
-    this.user.entityTypeId=1
-  }
+  constructor(private http :HttpClient) { }
 
   getStudents():Observable<User[]>{
-    return this.http.get<User[]>(this.baseURL+"/User/getStudents")
+    return this.http.get<User[]>(this.baseURL+"/user/get-students")
   }
 
   getUserByTz(user):Observable<User>{
-    return this.http.post<User>(this.baseURL+"/User/login",user)
+    return this.http.post<User>(this.baseURL+"/user/login",user)
   }
 
   getBalanceByUser(user):Observable<number>{
-    return this.http.post<number>(this.baseURL+"/User/getBalance",user)
+    return this.http.post<number>(this.baseURL+"/user/get-balance",user)
   }
 
   newDeposit(deposit):Observable<any>{
-    return this.http.post<any>(this.baseURL+"/Deposit/NewDeposit",deposit)
+    return this.http.post<any>(this.baseURL+"/deposit/new-deposit",deposit)
   }
 
   getPrinytHistory(user):Observable<PrintHistory[]>{
-    return this.http.post<PrintHistory[]>(this.baseURL+"/PrintHistory/PrintHistory",user)
+    return this.http.post<PrintHistory[]>(this.baseURL+"/printHistory/printHistory",user)
   }
- checkOldPass(oldPassWord):boolean{
+ checkOldPass(oldPassWord){
    return oldPassWord==this.user.userTz;
  }
  validPass(newPass,validPass){
-return newPass==validPass;
+return newPass=validPass;
  }
-
 updatePass(newPassWord):Observable<boolean>{
+
   this.user.userTz=newPassWord;
-  return  this.http.post<boolean>(this.baseURL+"/User/updatePass",this.user); 
+  return  this.http.post<boolean>(this.baseURL+" ",this.user); 
 }
 }

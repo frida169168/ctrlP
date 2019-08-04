@@ -1,11 +1,6 @@
-<label for="singleFile">Upload file</label>
-<input id="singleFile" accept=".xlsx" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
-<br>
-<mat-file-upload-queue #fileUploadQueue
-    [fileAlias]="'file'"
-    [httpUrl]="'http://localhost:4200/api/read-excel/test'">
-  <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
-</mat-file-upload-queue>
+<p>
+  staff
+</p>
+
 <button routerLink="/loadingStaff">loading</button>
 <button routerLink="/sheetSetting">sheetSetting</button>
-<button routerLink="/SetStaffPasword">SetStaffPasword</button>

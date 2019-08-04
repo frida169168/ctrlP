@@ -2,8 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 import { User } from 'src/app/model/User';
 import { UserService } from 'src/app/services/user.service';
-import{Router, NavigationExtras}from '@angular/router';
+import{Router, NavigationExtras}from '@angular/router'
 import { eType } from 'src/app/model/eType';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

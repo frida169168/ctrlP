@@ -1,9 +1,6 @@
-import { SizeOfPage } from "./SizeOfPage";
-import { Price } from "./Price";
-
-export class Sheet {
-    SizeOfPage:SizeOfPage;
-    price:Price;
-
-    
-}
+export class sheet{
+    id:number;
+    nameSize:string;
+    priceColorFull:number;
+    priceBlackWhite:number;
+}    

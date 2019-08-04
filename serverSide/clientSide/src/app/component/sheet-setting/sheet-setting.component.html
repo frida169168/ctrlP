@@ -1,16 +1,9 @@
 
-<ng-container matColumnDef="actions">
-  <mat-header-cell *matHeaderCellDef>
-    <button mat-icon-button color="primary" (click)="dialogAdd()">
-      <mat-icon aria-label="Example icon-button with a heart icon">הוספה</mat-icon>
-    </button>
-  </mat-header-cell>
-
-<button (click)="dialogAdd()"> add</button>
 <div *ngFor="let sheet of sheets">
-  <h1  >{{sheet.SizeOfPage?.sizeName}}</h1>
-  <p  >צבעוני:  {{sheet.price?.priceColorFull}}</p>
-  <p >שחור לבן:  {{sheet.price?.priceBlackWhite}}</p>
-  <button value="מחק" (click)="dialogDelete(sheet.SizeOfPage.sizeId)"> מחק</button>
+  <h1  >{{(sheet.SizeOfPage.nameSize)}}</h1>
+  <p  >צבועני:  {{sheet.price.priceColorFull}}</p>
+  <p >שחור לבן:  {{sheet.price.priceBlackWhite}}</p>
+  <button value="מחק" (click)="deleteSheet(sheet.SizeOfPage.sizeId)"> מחק</button>
   <button mat-raised-button (click)="openDialog(sheet)">עריכה</button>
 </div>
+

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddSheetComponent } from './add-sheet.component';
+import { ViewPrintHistoryComponent } from './view-print-history.component';
 
-describe('AddSheetComponent', () => {
-  let component: AddSheetComponent;
-  let fixture: ComponentFixture<AddSheetComponent>;
+describe('ViewPrintHistoryComponent', () => {
+  let component: ViewPrintHistoryComponent;
+  let fixture: ComponentFixture<ViewPrintHistoryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddSheetComponent ]
+      declarations: [ ViewPrintHistoryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddSheetComponent);
+    fixture = TestBed.createComponent(ViewPrintHistoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
