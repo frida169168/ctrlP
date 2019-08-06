@@ -65,7 +65,7 @@ openDialog(sheet:Sheet): void {
 dialogDelete(sheetId:Number) {
   // this.id = schoolId;
   const dialogRef = this.dialog.open(DeleteSheetComponent, {
-    data: {sheetUd:sheetId}
+    data: sheetId
   });
 
   dialogRef.afterClosed().subscribe(result => {

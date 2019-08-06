@@ -17,6 +17,8 @@ export class AddSheetComponent implements OnInit {
 
   ngOnInit() {
   }
+  mySheet:Sheet=this.data;
+
   closeDialog():void{
     this.dialogRef.close();
   }

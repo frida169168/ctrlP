@@ -10,7 +10,7 @@ import { SheetService } from '../../services/sheet.service';
 })
 export class DeleteSheetComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<DeleteSheetComponent>,@Inject(MAT_DIALOG_DATA) public data: Sheet,private sheetService:SheetService ) { }
+  constructor(public dialogRef: MatDialogRef<DeleteSheetComponent>,@Inject(MAT_DIALOG_DATA) public data: number,private sheetService:SheetService ) { }
 
   ngOnInit() {
     console.log("lll"+this.data);
@@ -20,7 +20,6 @@ export class DeleteSheetComponent implements OnInit {
   }
   onClickDelete(sheetId:Number):void{
   this.sheetService.deleteSheet(sheetId).subscribe(res=>{alert("נמחק בהצלחה")},err=>{"נכשל"});
-
 }
 }
 
