@@ -13,6 +13,7 @@ export class DeleteSheetComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<DeleteSheetComponent>,@Inject(MAT_DIALOG_DATA) public data: Sheet,private sheetService:SheetService ) { }
 
   ngOnInit() {
+    console.log("lll"+this.data);
   }
   onClickCancel():void{
     this.dialogRef.close();

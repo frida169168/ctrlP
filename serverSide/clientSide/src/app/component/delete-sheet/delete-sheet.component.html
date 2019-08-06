@@ -1,10 +1,10 @@
-<div>
+<!-- <div>
   <p>האם למחוק את הדף הזה?</p>
 <div>
 <button mat-button mat-dialog-close>ביטול</button>
 <button mat-button [mat-dialog-close]="{ isOK: true}" cdkFocusInitial>מחק</button>
 </div>
-</div>
+</div> -->
 <div class="container">
   <h3 mat-dialog-title>האם אתה בטוח שברצונך למחוק דף זה?</h3>
   <!-- <div mat-dialog-content>
@@ -12,6 +12,6 @@
     <p></p>
     deleteSheet
   <div mat-dialog-actions> -->
-    <button mat-button [mat-dialog-close]="1" (click)="onClickDelete(date.sheetId)">Delete</button>
+    <button mat-button  (click)="onClickDelete(date.sheetId)">Delete</button>
     <button mat-button (click)="onClickCancel()" tabindex="-1">Cancel</button>
   </div>

@@ -19,14 +19,17 @@ import { AddSheetComponent } from '../add-sheet/add-sheet.component';
 export class SheetSettingComponent implements OnInit {
   constructor(private sheetService:SheetService,private route:Router,public dialog: MatDialog,private SheetService:SheetService) { }
   public sheets :Sheet[]=[];
- 
   ngOnInit() {
+ 
     this.showSheets();
+ 
   }
   showSheets(){
     this.sheetService.getSheets().subscribe(res=>{
       this.sheets=res;
     },err=>{
+      debugger
+      alert("error");
     })
   }
   deleteSheet(sheetId){
@@ -66,9 +69,9 @@ dialogDelete(sheetId:Number) {
   });
 
   dialogRef.afterClosed().subscribe(result => {
-    // if (result === 1) {
-    //   this.sheetService.deleteSheet(sheetId).subscribe(res=>{this.showSheets()});
-    // }
+    if (result === 1) {
+      this.sheetService.deleteSheet(sheetId).subscribe(res=>{this.showSheets()});
+    }
     this.showSheets();
   });
 }   
@@ -89,7 +92,9 @@ dialogAdd(sheet:Sheet):void{
       }
 }})
     dialogRef.afterClosed().subscribe(result => {
-      if (result&&result.isOK) {
+ 
+      if (result) {
+       
         this.showSheets();
       }
     });

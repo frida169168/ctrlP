@@ -9,22 +9,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SheetService {
 public sheet:Sheet;
-public  baseURL:String=environment.apiUrl+"/PrintingSheet";
+public  baseURL:String=environment.apiUrl+"/printing-sheet";
   constructor(private http:HttpClient) { }
   getSheets():Observable<Sheet[]>{
-    return this.http.get<Sheet[]>(this.baseURL+"/GetSheets");
+    return this.http.get<Sheet[]>(this.baseURL+"/get-sheets");
   } 
   
   deleteSheet(sheet){
-      return this.http.delete(this.baseURL+"/RemoveSheet/"+sheet);
+      return this.http.delete(this.baseURL+"/remove-sheet/"+sheet);
     }
   EditSheet(sheet){
     debugger;
-    return this.http.post(this.baseURL+"/UpdateSheet",sheet);
+    return this.http.post(this.baseURL+"/update-sheet",sheet);
   }
   addSheeet(sheet){
-    return this.http.post(this.baseURL+"/AddSheet",sheet);
+    return this.http.post(this.baseURL+"/add-sheet",sheet);
   }   
 }
+
 
 
