@@ -15,9 +15,8 @@ import { MatFormFieldModule, MatInputModule, MatDialogModule, MatSelectModule, M
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { SheetService } from './services/sheet.service';
 import { SpecService } from './services/spec.service';
-import { SetStaffPaswordComponent } from './component/set-staff-pasword/set-staff-pasword.component';
+import { SetStaffPaswordComponent } from './set-staff-pasword/set-staff-pasword.component';
 import { EditComponent } from './component/edit/edit.component';
-import { ViewPrintHistoryComponent } from './component/view-print-history/view-print-history.component';
 import { DepositListComponent } from './component/deposit-list/deposit-list.component';
 
 @NgModule({
@@ -30,7 +29,6 @@ import { DepositListComponent } from './component/deposit-list/deposit-list.comp
     LoadingStaffComponent,
     SetStaffPaswordComponent ,
     EditComponent,
-    ViewPrintHistoryComponent,
     DepositListComponent    
   ],
   imports: [
@@ -39,23 +37,27 @@ import { DepositListComponent } from './component/deposit-list/deposit-list.comp
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatSelectModule,
-    MatListModule,
-    MatPaginatorModule,
-    MatListModule,
-    MatTableModule,
+    MatFileUploadModule,
+    MatIconModule,    
     MatButtonModule,
-    MatIconModule,
+    MatDialogModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+     MatInputModule,
+    MatTableModule,
     MatCheckboxModule,
     MatAutocompleteModule,
     MatButtonToggleModule
   ],
   entryComponents:[
-  EditComponent
+  EditComponent,
+  DeleteSheetComponent,
+  AddSheetComponent
   ],
   providers: [UserService,SheetService,SpecService],
   bootstrap: [AppComponent]

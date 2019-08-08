@@ -11,7 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 export class SpecService {
 
-  public baseURL=environment.apiUrl+"/specialization";
+  public baseURL=environment.apiUrl+"/Specialization";
 
   constructor(private http:HttpClient) { }
 

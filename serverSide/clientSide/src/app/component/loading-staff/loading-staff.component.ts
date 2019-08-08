@@ -43,7 +43,7 @@ export class LoadingStaffComponent implements OnInit {
 
   ngOnInit() {
     this.getStudents();
-    this.getAllSpecializations();
+    this.getAllSpec();
    
 
     this.filteredStudents = this.myControl.valueChanges
@@ -114,12 +114,14 @@ export class LoadingStaffComponent implements OnInit {
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.userId + 1}`;
   }
 
-  getAllSpecializations() {
-    this.specServ.getAllSpec().subscribe(res => {
-      for (const resValue of res) {
+  getAllSpec(){
+    this.specServ.getAllSpec().subscribe(res=>{ 
+      for (const resValue of res){     
         this.specializations.push(resValue);
-      }
-    }, err => {
+      }      
+      alert(":)good spec")     
+    },err=>{
+      alert(":(spec")       
     })
   }
   getStudents() {

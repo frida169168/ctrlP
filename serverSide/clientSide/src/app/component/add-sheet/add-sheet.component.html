@@ -11,6 +11,6 @@
     <input matInput placeholder="מחיר צבועני" name="price"  [(ngModel)]="data.price.priceColorFull" required>
   </mat-form-field>
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="{myData: data, isOK: true}" cdkFocusInitial>עדכן</button>
+  <button mat-button [mat-dialog-close]="1" (click)="addSheet()">save</button>
 </div>
 </form>
