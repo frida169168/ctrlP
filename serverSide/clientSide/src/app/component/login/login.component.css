@@ -1,0 +1,20 @@
+.login-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 15vw;
+    color:crimson;
+
+  }
+  
+  .example-full-width {
+    width: 100%;
+    color:crimson;
+  }
+  .mat-flat-button{
+    background-color: crimson;
+  }
+  .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: crimson;
+  }

@@ -11,53 +11,41 @@ using System.Web.Http.Cors;
 
 namespace WebServiceControlPrint.Controllers
 {
-    [RoutePrefix("api/PrintingSheet")]
+    [RoutePrefix("api/printing-sheet")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PrintingSheetController : ApiController
     {
       
         [HttpPost]
-        [Route("AddSheet/{printingSheet}")]
+        [Route("add-sheet")]
         public HttpResponseMessage AddSheet(PrintingSheetDTO printingSheet)
         {
 
-      PrintingSheetLogic.AddSheet(printingSheet);
+            PrintingSheetLogic.AddSheet(printingSheet);
             return Request.CreateResponse(HttpStatusCode.OK);
 
-        }
-        
-        [HttpPost]
-        [Route("CalaulateJob")]
-        public HttpResponseMessage AddSheet(Job job)
+        }        
+    
+        [HttpDelete]
+        [Route("remove-sheet/{sizeId}")]
+        public HttpResponseMessage RemoveSheet(int sizeId)
         {
 
+            PrintingSheetLogic.DeleteSheet(sizeId);
             return Request.CreateResponse(HttpStatusCode.OK);
 
         }
         [HttpPost]
-        [Route("RemoveSheet")]
-        public HttpResponseMessage RemoveSheet(int sheetId)
-        {
-
-<<<<<<< HEAD
-           // PrintingSheetLogic.DeleteSheet(sheetId);
-=======
-            //PrintingSheetLogic.DeleteSheet(sheetId);
->>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
-            return Request.CreateResponse(HttpStatusCode.OK);
-
-        }
-        [HttpPost]
-        [Route("UpdateSheet/{printingSheet}")]
+        [Route("update-sheet")]
         public HttpResponseMessage UpdateSheet(PrintingSheetDTO printingSheet)
         {
 
-            //PrintingSheetLogic.UpdateSheet(printingSheet);
+            PrintingSheetLogic.UpdateSheet(printingSheet);
             return Request.CreateResponse(HttpStatusCode.OK);
 
         }
        [HttpGet]
-        [Route("GetSheets")]
+        [Route("get-sheets")]
         public HttpResponseMessage GetSheets()
         {
             List<PrintingSheetDTO> printingSheetDTOs = new List<PrintingSheetDTO>();

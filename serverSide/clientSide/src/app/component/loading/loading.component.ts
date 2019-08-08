@@ -39,14 +39,12 @@ export class LoadingComponent implements OnInit {
     this.deposit.userId=this.user.userId;
     //this.deposit.depositDate=Date.now();????????????????????
     this.userSer.newDeposit(this.deposit).subscribe(res=>{
-      alert("Is Loading")
       this.userBalance+=res;
     },err=>{
-      alert("error")
     });
   }
 
-  PrintHostory(){
+  getPrintHostory(){
     this.userSer.getPrinytHistory(this.user).subscribe(res=>{
       this.printHistory=res;      
     },err=>{});

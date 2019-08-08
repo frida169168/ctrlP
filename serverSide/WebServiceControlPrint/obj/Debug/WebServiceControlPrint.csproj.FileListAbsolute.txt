@@ -190,6 +190,58 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\02.06.19\serverSide\We
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\WebGrease.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
@@ -236,254 +288,330 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\WebGrease.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.pdb
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll.config
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.pdb
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll.config
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.pdb
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll.config
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojAssemblyReference.cache
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
-Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
-<<<<<<< HEAD
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojAssemblyReference.cache
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.rsp
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Managed.Core.targets
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.AppContext.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Collections.Immutable.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Console.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Compression.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Reflection.Metadata.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.AccessControl.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Claims.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Principal.Windows.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.ValueTuple.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XmlDocument.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebGrease.dll
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.dll.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.dll.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.dll.config
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\gi_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
-=======
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojAssemblyReference.cache
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\csi.rsp
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.AppContext.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Collections.Immutable.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Console.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Compression.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Reflection.Metadata.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.AccessControl.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Claims.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Principal.Windows.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.ValueTuple.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XmlDocument.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\WebGrease.dll
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\BL.dll.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\DAL.dll.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Entities.dll.config
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Git_repository\ctrlP\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
->>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\MultipartParser.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\nunit.framework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\nunit.framework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\csi.rsp
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Managed.Core.targets
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.AppContext.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Collections.Immutable.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Console.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Compression.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Reflection.Metadata.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.AccessControl.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Claims.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Principal.Windows.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.ValueTuple.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XmlDocument.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\MultipartParser.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\nunit.framework.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\WebGrease.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\BL.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\BL.dll.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\DAL.dll.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Entities.dll.config
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\nunit.framework.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.pdb
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Sprache.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.xml
+E:\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojResolveAssemblyReference.cache
+E:\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
+E:\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
+E:\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
+E:\02.06.19\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\csi.rsp
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Managed.Core.targets
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.AppContext.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Collections.Immutable.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Console.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Compression.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Reflection.Metadata.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.AccessControl.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Claims.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Principal.Windows.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.ValueTuple.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XmlDocument.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\BL.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\DAL.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Entities.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\MultipartParser.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\nunit.framework.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Sprache.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\WebGrease.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\BL.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\BL.dll.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\DAL.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\DAL.dll.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Entities.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Entities.dll.config
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\nunit.framework.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Sprache.pdb
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Sprache.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.xml
+E:\FinalProject\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojResolveAssemblyReference.cache
+E:\FinalProject\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
+E:\FinalProject\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
+E:\FinalProject\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
+E:\FinalProject\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\WebServiceControlPrint.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csc.exe.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csc.rsp
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csi.exe.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\csi.rsp
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.CSharp.Core.targets
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.Managed.Core.targets
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.AppContext.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Collections.Immutable.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Console.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Diagnostics.StackTrace.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Compression.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.AccessControl.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.IO.Pipes.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Reflection.Metadata.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.AccessControl.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Claims.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Security.Principal.Windows.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Text.Encoding.CodePages.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.ValueTuple.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.ReaderWriter.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XmlDocument.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\System.Xml.XPath.XDocument.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\vbc.exe.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\vbc.rsp
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\roslyn\VBCSCompiler.exe.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\BL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Entities.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Microsoft.Web.Infrastructure.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Microsoft.Web.XmlTransform.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\MultipartParser.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\nunit.framework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Sprache.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Cors.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Razor.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\WebGrease.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\BL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\BL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Entities.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Entities.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Antlr3.Runtime.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\nunit.framework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Sprache.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Sprache.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Net.Http.Formatting.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Helpers.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.Cors.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Mvc.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Optimization.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Razor.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Deployment.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.WebPages.Razor.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Newtonsoft.Json.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete

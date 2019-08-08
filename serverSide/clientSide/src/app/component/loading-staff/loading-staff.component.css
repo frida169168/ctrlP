@@ -1,4 +1,4 @@
-.example-form {
+ .example-form {
     min-width: 150px;
     max-width: 500px;
     width: 100%;
@@ -11,5 +11,17 @@
   mat-form-field {
     margin-right: 12px;
   }
- 
+  .bt{
+    background-color: crimson;
+  }
+  .mat-elevation-z8{
+    width: 60vw;
+    margin: auto;
 
+  }
+  table.mat-table {    
+    width: -webkit-fill-available;    
+}
+th{
+  font-size: medium;
+}

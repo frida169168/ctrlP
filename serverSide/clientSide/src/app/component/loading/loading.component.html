@@ -1,7 +1,22 @@
-Hello {{user.userName}}
+<!-- Hello {{user.userName}}
 <p>Your balance: {{userBalance}}</p>
 <form (ngSubmit)="onLoad()" #loginForm="ngForm">
-<input type="number" name="amount" #amount [(ngModel)]="deposit.depositAmount" placeholder="הכנס סכום להטענה"/>
-<button type="submit" name="submit">הטען</button>
+    <input type="number" name="amount" #amount [(ngModel)]="deposit.depositAmount" placeholder="הכנס סכום להטענה" />
+    <button type="submit" name="submit">הטען</button>
 </form>
 <button name="printHistory" (click)="PrintHostory()">הסטורית הדפסות</button>
+ -->
+
+
+<div class="warp_loading">
+    <h2>{{user.userName}}</h2>
+    <p>יתרתך: {{userBalance}}</p>
+    <form class="login-form" #loginForm="ngForm" (ngSubmit)="onLoad()">
+        <mat-form-field class="example-full-width">
+            <input type="number" matInput placeholder="הכניסי סכום" name="amount" [(ngModel)]="deposit.depositAmount"
+                required>
+        </mat-form-field>
+        <button type="submit" mat-flat-button [disabled]="!loginForm.form.valid">טען</button>
+    </form>
+    <button mat-flat-button (click)="getPrintHostory()" class="bt_printHistory">הסטורית הדפסות</button>
+</div>

@@ -10,25 +10,27 @@ using System.Web.Http.Cors;
 
 namespace WebServiceControlPrint.Controllers
 {
-    [RoutePrefix("api/Deposit")]
+    [RoutePrefix("api/deposit")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class DepositsController : ApiController
     {
         [HttpPost]
-        [Route("GetDeposit")]
+        [Route("get-deposits-by-userID")]
         public HttpResponseMessage GetDeposit([FromBody]int userlId)
         {
             List<DepositDTO> deposits = new List<DepositDTO>();
             deposits = DepositLogic.GetDeposits(userlId);
             if (deposits != null)
-            { return Request.CreateResponse(HttpStatusCode.OK, deposits); }
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, deposits);
+            }
             else
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound);
             }
         }
         [HttpPost]
-        [Route("NewDeposit")]
+        [Route("new-deposit")]
         public HttpResponseMessage NewDeposit(DepositDTO deposit)
         {            
             return Request.CreateResponse(HttpStatusCode.OK,DepositLogic.NewDeposit(deposit));

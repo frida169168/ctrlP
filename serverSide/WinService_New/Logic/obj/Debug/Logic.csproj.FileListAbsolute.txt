@@ -1,0 +1,23 @@
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\bin\Debug\Logic.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\bin\Debug\Logic.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\bin\Debug\Newtonsoft.Json.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\obj\Debug\Logic.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\obj\Debug\Logic.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\obj\Debug\Logic.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\obj\Debug\Logic.pdb
+E:\WinService\Logic\bin\Debug\Logic.dll
+E:\WinService\Logic\bin\Debug\Logic.pdb
+E:\WinService\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+E:\WinService\Logic\obj\Debug\Logic.dll
+E:\WinService\Logic\obj\Debug\Logic.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\WinService\Logic\bin\Debug\PrinterQueueWatch.dll
+E:\WinService\Logic\bin\Debug\PrinterQueueWatch.dll
+E:\‏‏WinService\Logic\bin\Debug\Logic.dll
+E:\‏‏WinService\Logic\bin\Debug\Logic.pdb
+E:\‏‏WinService\Logic\bin\Debug\Newtonsoft.Json.dll
+E:\‏‏WinService\Logic\bin\Debug\PrinterQueueWatch.dll
+E:\‏‏WinService\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+E:\‏‏WinService\Logic\obj\Debug\Logic.csproj.CopyComplete
+E:\‏‏WinService\Logic\obj\Debug\Logic.dll
+E:\‏‏WinService\Logic\obj\Debug\Logic.pdb

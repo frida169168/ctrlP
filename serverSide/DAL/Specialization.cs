@@ -24,8 +24,8 @@ namespace DAL
         public string specName { get; set; }
         public Nullable<int> specKindId { get; set; }
     
+        public virtual SpecializationKind SpecializationKind { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserToSpec> UserToSpecs { get; set; }
-        public virtual SpecializationKind SpecializationKind { get; set; }
     }
 }

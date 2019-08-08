@@ -78,16 +78,13 @@
     <Property Name="userName" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="entityTypeId" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="UserToSpec">
     <Key>
-      <PropertyRef Name="userId" />
-      <PropertyRef Name="specId" />
+      <PropertyRef Name="userTospecId" />
     </Key>
+    <Property Name="userTospecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="userId" Type="int" Nullable="false" />
     <Property Name="specId" Type="int" Nullable="false" />
-    <Property Name="userTospecId" Type="int" />
   </EntityType>
   <Association Name="FK__Individua__indiv__7A672E12">
     <End Role="User" Type="Self.User" Multiplicity="1" />
@@ -183,13 +180,7 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
     <EntitySet Name="SpecializationKind" EntityType="Self.SpecializationKind" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="UserToSpec" EntityType="Self.UserToSpec" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [UserToSpec].[userId] AS [userId], 
-    [UserToSpec].[specId] AS [specId], 
-    [UserToSpec].[userTospecId] AS [userTospecId]
-    FROM [dbo].[UserToSpec] AS [UserToSpec]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="UserToSpec" EntityType="Self.UserToSpec" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="Self.FK__Individua__indiv__7A672E12">
       <End Role="User" EntitySet="User" />
       <End Role="UserToSpec" EntitySet="UserToSpec" />

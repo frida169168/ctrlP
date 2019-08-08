@@ -11,14 +11,14 @@ import { AppRoutingModule }from './app-routing/app-routing.module';
 import { StaffComponent } from './component/staff/staff.component';
 import { SheetSettingComponent } from './component/sheet-setting/sheet-setting.component';
 import { LoadingStaffComponent } from './component/loading-staff/loading-staff.component';
-import { MatFormFieldModule, MatInputModule, MatDialogModule, MatSelectModule, MatListOption, MatListModule, MatPaginatorModule, MatTableModule, MatButtonModule, MatIconModule, MatCheckboxModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatDialogModule, MatSelectModule, MatListOption, MatListModule, MatPaginatorModule, MatTableModule, MatButtonModule, MatIconModule, MatCheckboxModule, MatButtonToggleModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { SheetService } from './services/sheet.service';
 import { SpecService } from './services/spec.service';
 import { SetStaffPaswordComponent } from './component/set-staff-pasword/set-staff-pasword.component';
 import { EditComponent } from './component/edit/edit.component';
-import { StudentPipe } from './student.pipe';
 import { ViewPrintHistoryComponent } from './component/view-print-history/view-print-history.component';
+import { DepositListComponent } from './component/deposit-list/deposit-list.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +30,8 @@ import { ViewPrintHistoryComponent } from './component/view-print-history/view-p
     LoadingStaffComponent,
     SetStaffPaswordComponent ,
     EditComponent,
-    StudentPipe,
     ViewPrintHistoryComponent,
-    
+    DepositListComponent    
   ],
   imports: [
     BrowserModule,
@@ -52,7 +51,8 @@ import { ViewPrintHistoryComponent } from './component/view-print-history/view-p
     MatButtonModule,
     MatIconModule,
     MatCheckboxModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatButtonToggleModule
   ],
   entryComponents:[
   EditComponent

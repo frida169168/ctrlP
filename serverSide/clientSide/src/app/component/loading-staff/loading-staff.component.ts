@@ -1,6 +1,6 @@
 import { Component, OnInit, inject, Injectable, ViewChild } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { SpecService } from 'src/app/services/spec.service';
 import { Specialization } from 'src/app/model/Specialization';
@@ -12,6 +12,7 @@ import { Type, ElementSchemaRegistry } from '@angular/compiler';
 import { eType } from 'src/app/model/eType';
 import { MatTableDataSource } from '@angular/material/table';
 import { SelectionModel } from '@angular/cdk/collections';
+import { StudentWithSpecs } from 'src/app/model/StudentWithSpecs';
 
 @Component({
   selector: 'app-loading-staff',
@@ -22,92 +23,74 @@ import { SelectionModel } from '@angular/cdk/collections';
 export class LoadingStaffComponent implements OnInit {
 
   myControl = new FormControl();
+  multiSpec = new FormControl();
+  specSearch: number[];
+  searchTxt: string;
+ 
+  studentsWithSpecs: StudentWithSpecs[]=[];
 
-  onlyStudentsFromUsers: User[] = [
-    { userId: 1, userTz: "31", userName: "frida", entityTypeId: eType.student },
-    { userId: 2, userTz: "31", userName: "racheli", entityTypeId: eType.student },
-    { userId: 3, userTz: "31", userName: "sari g", entityTypeId: eType.student },
-    { userId: 4, userTz: "31", userName: "malki", entityTypeId: eType.student },
-    { userId: 5, userTz: "31", userName: "sari k", entityTypeId: eType.student },
-    { userId: 6, userTz: "31", userName: "yafi", entityTypeId: eType.student },
-    { userId: 7, userTz: "31", userName: "tamar", entityTypeId: eType.student },
-    { userId: 8, userTz: "31", userName: "esty", entityTypeId: eType.student }
-  ];
-  specializations: Specialization[] = [
-    { specId: 1, specName: "programer", specKindId: 1 },
-    { specId: 2, specName: "grafica", specKindId: 1 },
-    { specId: 3, specName: "english", specKindId: 1 },
-    { specId: 4, specName: "math", specKindId: 1 },
+  
+  filteredStudents: Observable<StudentWithSpecs[]>;
 
-  ];
-  userToSpecs: any[] = [
-    { userId: 1, specId: 1 },
-    { userId: 1, specId: 2 },
-    { userId: 2, specId: 1 },
-    { userId: 3, specId: 2 },
-    { userId: 4, specId: 2 },
-    { userId: 5, specId: 3 },
-    { userId: 6, specId: 3 },
-    { userId: 7, specId: 4 },
-    { userId: 8, specId: 4 }
-  ];
-
-  filteredStudents: Observable<User[]>;
-
-  displayedColumns: string[] = ['select', 'name', 'specializationList'];
-  dataSource = new MatTableDataSource<User>(this.onlyStudentsFromUsers);
-  selection = new SelectionModel<User>(true, []);
+  displayedColumns: string[] = ['select', 'name', 'specs'];
+  dataSource ;
+  specializations:Specialization[] = [];
+  selection = new SelectionModel<StudentWithSpecs>(true, []);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor(private specServ: SpecService, private userServ: UserService) { }
 
   ngOnInit() {
+    this.getStudents();
+    this.getAllSpecializations();
+   
+
     this.filteredStudents = this.myControl.valueChanges
-    .pipe(
-      startWith(''),
-      map(value => typeof value === 'string' ? value : value['userName']),
-      map(name => name ? this._filter(name) : this.onlyStudentsFromUsers.slice())
+      .pipe(
+        startWith(''),
+        map(value => typeof value === 'string' ? value : value['userName']),
+        map(name => name ? this._filter(name) : this.studentsWithSpecs.slice())
       );
-      
-      //this.getAllSpecializations();
-      //this.getAllUsers();
-      this.getSpecializationList();
-      this.dataSource.paginator = this.paginator;
-  }
-
-  onSelectionChanged(value:any){
-    debugger;
-    
-
     
   }
-  getSpecializationList() {
-    this.onlyStudentsFromUsers.forEach((student) => {
-      this.userToSpecs.forEach(userSpec => {
-        if (userSpec.userId == student.userId) {
-          if (!student['specializationList'])
-            student['specializationList'] = [];
-          student['specializationList'].push(this.specializations.find(f => f.specId == userSpec.specId));
+
+
+  filterData() {
+    var value = this.dataSource.data;
+    if (value && this.searchTxt != '' && this.searchTxt != null) {
+      value = value.filter(f => f.userName.indexOf(this.searchTxt) >= 0);
+    }
+    if (value  && this.multiSpec.value != null) {
+      value= value.filter((f => {
+        var exist = true;
+        this.multiSpec.value.forEach(s => {
+          if (!f.specs.find(d => d.specId == s))
+            exist = false;
+        });
+        if (exist) {
+          return f;
         }
-      })
-    })
-
+      }
+      ));
+    }
+    this.dataSource = new MatTableDataSource<StudentWithSpecs>(value);
   }
 
-  listToString(arr:any[]){
-    var tmp=arr.map(m=>m.specName);
+
+  listToString(arr: any[]) {
+    var tmp = arr.map(m => m.specName);
     return tmp.join();
   }
 
-  displayFn(user?: User): string | undefined {
+  displayFn(user?: StudentWithSpecs): string | undefined {
     return user ? user.userName : undefined;
   }
 
-  private _filter(name: string): User[] {
+  private _filter(name: string): StudentWithSpecs[] {
     const filterValue = name.toLowerCase();
 
-    return this.onlyStudentsFromUsers.filter(option => option.userName.toLowerCase().indexOf(filterValue) === 0);
+    return this.studentsWithSpecs.filter(option => option.userName.toLowerCase().indexOf(filterValue) === 0);
   }
 
   isAllSelected() {
@@ -122,11 +105,13 @@ export class LoadingStaffComponent implements OnInit {
       this.dataSource.data.forEach(row => this.selection.select(row));
   }
 
-  checkboxLabel(row?: User): string {
+  checkboxLabel(row?: StudentWithSpecs): string {
+    console.log('row is', row)
+    console.log('selection: ', this.selection)
     if (!row) {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
-    // return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
+    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.userId + 1}`;
   }
 
   getAllSpecializations() {
@@ -137,13 +122,18 @@ export class LoadingStaffComponent implements OnInit {
     }, err => {
     })
   }
+  getStudents() {
+      this.userServ.getStudentsWithSpecs().subscribe(res => {
+       this.studentsWithSpecs = res;
+       this.dataSource=new MatTableDataSource<StudentWithSpecs>(this.studentsWithSpecs);
+       this.dataSource.paginator = this.paginator;
 
-  getAllUsers() {
-    this.userServ.getStudents().subscribe(res => {
-      for (const resValue of res) {
-        this.onlyStudentsFromUsers.push(resValue);
-      }
-    }, err => {
-    })
-  }
+ 
+      }, err => {
+      })
+    }
+    LoadingMoney(){
+      debugger;
+      console.log('LoadingMoney to: ' , this.selection.selected)
+    }
 }

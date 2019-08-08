@@ -11,7 +11,7 @@ namespace DTO
         public string userTz { get; set; }
         public int userId { get; set; }
         public string userName { get; set; }
-        public eType entityTypeId { get; set; }      
+        public Type entityTypeId { get; set; }   
    
     }
 }

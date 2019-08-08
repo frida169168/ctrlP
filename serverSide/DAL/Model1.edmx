@@ -83,16 +83,13 @@
           <Property Name="userName" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="entityTypeId" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="UserToSpec">
           <Key>
-            <PropertyRef Name="userId" />
-            <PropertyRef Name="specId" />
+            <PropertyRef Name="userTospecId" />
           </Key>
+          <Property Name="userTospecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="userId" Type="int" Nullable="false" />
           <Property Name="specId" Type="int" Nullable="false" />
-          <Property Name="userTospecId" Type="int" />
         </EntityType>
         <Association Name="FK__Individua__indiv__7A672E12">
           <End Role="User" Type="Self.User" Multiplicity="1" />
@@ -188,13 +185,7 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
           <EntitySet Name="SpecializationKind" EntityType="Self.SpecializationKind" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="UserToSpec" EntityType="Self.UserToSpec" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [UserToSpec].[userId] AS [userId], 
-    [UserToSpec].[specId] AS [specId], 
-    [UserToSpec].[userTospecId] AS [userTospecId]
-    FROM [dbo].[UserToSpec] AS [UserToSpec]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="UserToSpec" EntityType="Self.UserToSpec" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="Self.FK__Individua__indiv__7A672E12">
             <End Role="User" EntitySet="User" />
             <End Role="UserToSpec" EntitySet="UserToSpec" />
@@ -266,9 +257,9 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
           <Property Name="specId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="specName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="specKindId" Type="Int32" />
-          <NavigationProperty Name="UserToSpecs" Relationship="Self.FK__Individua__specI__7B5B524B" FromRole="Specialization" ToRole="UserToSpec" />
           <NavigationProperty Name="SpecializationKind" Relationship="Self.fk_constraint2" FromRole="Specialization" ToRole="SpecializationKind" />
-        </EntityType>
+          <NavigationProperty Name="UserToSpecs" Relationship="controlPrintModel.FK__Individua__specI__7B5B524B" FromRole="Specialization" ToRole="UserToSpec" />
+          </EntityType>
         <EntityType Name="SpecializationKind">
           <Key>
             <PropertyRef Name="specKindId" />
@@ -298,18 +289,7 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
           <NavigationProperty Name="Deposits" Relationship="Self.fk_constraint12" FromRole="User" ToRole="Deposit" />
           <NavigationProperty Name="EntityType" Relationship="Self.fk_constraint1" FromRole="User" ToRole="EntityType" />
           <NavigationProperty Name="PrintHistories" Relationship="Self.fk_constraint6" FromRole="User" ToRole="PrintHistory" />
-          <NavigationProperty Name="UserToSpecs" Relationship="Self.FK__Individua__indiv__7A672E12" FromRole="User" ToRole="UserToSpec" />
-        </EntityType>
-        <EntityType Name="UserToSpec">
-          <Key>
-            <PropertyRef Name="userId" />
-            <PropertyRef Name="specId" />
-          </Key>
-          <Property Name="userId" Type="Int32" Nullable="false" />
-          <Property Name="specId" Type="Int32" Nullable="false" />
-          <Property Name="userTospecId" Type="Int32" />
-          <NavigationProperty Name="Specialization" Relationship="Self.FK__Individua__specI__7B5B524B" FromRole="UserToSpec" ToRole="Specialization" />
-          <NavigationProperty Name="User" Relationship="Self.FK__Individua__indiv__7A672E12" FromRole="UserToSpec" ToRole="User" />
+          <NavigationProperty Name="UserToSpecs" Relationship="controlPrintModel.FK__Individua__indiv__7A672E12" FromRole="User" ToRole="UserToSpec" />
         </EntityType>
         <Association Name="fk_constraint12">
           <End Role="User" Type="Self.User" Multiplicity="0..1" />
@@ -347,18 +327,6 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Individua__specI__7B5B524B">
-          <End Role="Specialization" Type="Self.Specialization" Multiplicity="1" />
-          <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Specialization">
-              <PropertyRef Name="specId" />
-            </Principal>
-            <Dependent Role="UserToSpec">
-              <PropertyRef Name="specId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_constraint2">
           <End Role="SpecializationKind" Type="Self.SpecializationKind" Multiplicity="0..1" />
           <End Role="Specialization" Type="Self.Specialization" Multiplicity="*" />
@@ -371,18 +339,6 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Individua__indiv__7A672E12">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
-          <End Role="UserToSpec" Type="Self.UserToSpec" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="userId" />
-            </Principal>
-            <Dependent Role="UserToSpec">
-              <PropertyRef Name="userId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="controlPrintEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Deposits" EntityType="Self.Deposit" />
           <EntitySet Name="EntityTypes" EntityType="Self.EntityType" />
@@ -391,7 +347,6 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
           <EntitySet Name="SpecializationKinds" EntityType="Self.SpecializationKind" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="Users" EntityType="Self.User" />
-          <EntitySet Name="UserToSpecs" EntityType="Self.UserToSpec" />
           <AssociationSet Name="fk_constraint12" Association="Self.fk_constraint12">
             <End Role="User" EntitySet="Users" />
             <End Role="Deposit" EntitySet="Deposits" />
@@ -404,17 +359,9 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
             <End Role="User" EntitySet="Users" />
             <End Role="PrintHistory" EntitySet="PrintHistories" />
           </AssociationSet>
-          <AssociationSet Name="FK__Individua__specI__7B5B524B" Association="Self.FK__Individua__specI__7B5B524B">
-            <End Role="Specialization" EntitySet="Specializations" />
-            <End Role="UserToSpec" EntitySet="UserToSpecs" />
-          </AssociationSet>
           <AssociationSet Name="fk_constraint2" Association="Self.fk_constraint2">
             <End Role="SpecializationKind" EntitySet="SpecializationKinds" />
             <End Role="Specialization" EntitySet="Specializations" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="Self.FK__Individua__indiv__7A672E12">
-            <End Role="User" EntitySet="Users" />
-            <End Role="UserToSpec" EntitySet="UserToSpecs" />
           </AssociationSet>
           <EntitySet Name="Prices" EntityType="controlPrintModel.Price" />
           <EntitySet Name="SizeOfPages" EntityType="controlPrintModel.SizeOfPage" />
@@ -422,7 +369,16 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
             <End Role="SizeOfPage" EntitySet="SizeOfPages" />
             <End Role="Price" EntitySet="Prices" />
           </AssociationSet>
-        </EntityContainer>
+          <EntitySet Name="UserToSpecs" EntityType="controlPrintModel.UserToSpec" />
+          <AssociationSet Name="FK__Individua__specI__7B5B524B" Association="controlPrintModel.FK__Individua__specI__7B5B524B">
+            <End Role="Specialization" EntitySet="Specializations" />
+            <End Role="UserToSpec" EntitySet="UserToSpecs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Individua__indiv__7A672E12" Association="controlPrintModel.FK__Individua__indiv__7A672E12">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserToSpec" EntitySet="UserToSpecs" />
+          </AssociationSet>
+          </EntityContainer>
         <EntityType Name="Price">
           <Key>
             <PropertyRef Name="priceId" />
@@ -453,7 +409,41 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        <EntityType Name="UserToSpec">
+          <Key>
+            <PropertyRef Name="userTospecId" />
+          </Key>
+          <Property Name="userTospecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="specId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Specialization" Relationship="controlPrintModel.FK__Individua__specI__7B5B524B" FromRole="UserToSpec" ToRole="Specialization" />
+          <NavigationProperty Name="User" Relationship="controlPrintModel.FK__Individua__indiv__7A672E12" FromRole="UserToSpec" ToRole="User" />
+        </EntityType>
+        <Association Name="FK__Individua__specI__7B5B524B">
+          <End Type="controlPrintModel.Specialization" Role="Specialization" Multiplicity="1" />
+          <End Type="controlPrintModel.UserToSpec" Role="UserToSpec" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Specialization">
+              <PropertyRef Name="specId" />
+            </Principal>
+            <Dependent Role="UserToSpec">
+              <PropertyRef Name="specId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Individua__indiv__7A672E12">
+          <End Type="controlPrintModel.User" Role="User" Multiplicity="1" />
+          <End Type="controlPrintModel.UserToSpec" Role="UserToSpec" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userId" />
+            </Principal>
+            <Dependent Role="UserToSpec">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -528,15 +518,6 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="UserToSpecs">
-            <EntityTypeMapping TypeName="controlPrintModel.UserToSpec">
-              <MappingFragment StoreEntitySet="UserToSpec">
-                <ScalarProperty Name="userId" ColumnName="userId" />
-                <ScalarProperty Name="specId" ColumnName="specId" />
-                <ScalarProperty Name="userTospecId" ColumnName="userTospecId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Prices">
             <EntityTypeMapping TypeName="controlPrintModel.Price">
               <MappingFragment StoreEntitySet="Price">
@@ -552,6 +533,15 @@ warning 6002: The table/view 'controlPrint.dbo.UserToSpec' does not have a prima
               <MappingFragment StoreEntitySet="SizeOfPage">
                 <ScalarProperty Name="sizeName" ColumnName="sizeName" />
                 <ScalarProperty Name="sizeId" ColumnName="sizeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserToSpecs">
+            <EntityTypeMapping TypeName="controlPrintModel.UserToSpec">
+              <MappingFragment StoreEntitySet="UserToSpec">
+                <ScalarProperty Name="specId" ColumnName="specId" />
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="userTospecId" ColumnName="userTospecId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

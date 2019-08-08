@@ -5,38 +5,37 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using BL;
 using DTO;
 namespace WebServiceControlPrint.Controllers
 {
-    [RoutePrefix("api/PrintHistory")]
+    [RoutePrefix("api/printHistory")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PrintHistoryController : ApiController
     {
         [HttpPost]
-        [Route("GetPrintHistory")]
-        public HttpResponseMessage GetPrintHistory(UserDTO user)
+        [Route("printHistory-by-user")]
+        public HttpResponseMessage GetPrintHistoryByUSer(UserDTO user)
         {
             List<PrintHistoryDTO> prints = new List<PrintHistoryDTO>();
             prints = PrintHistoryLogic.GetPrintHistory(user.userId);
             if (prints != null)
-            { 
-            return Request.CreateResponse(HttpStatusCode.OK,prints);
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, prints);
             }
             else
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound);
             }
-         
+
         }
         [HttpPost]
-        [Route("AddPrint/{UserId}")]
-        public HttpResponseMessage AddPrint(PrintHistoryDTO print )
+        [Route("add-printing")]
+        public HttpResponseMessage AddPrinting(PrintHistoryDTO print)
         {
             PrintHistoryLogic.AddPrint(print);
-           
-                return Request.CreateResponse(HttpStatusCode.OK);
-           //     return Request.CreateResponse(HttpStatusCode.NotFound);
-  
+            return Request.CreateResponse(HttpStatusCode.OK);
         }
     }
 }

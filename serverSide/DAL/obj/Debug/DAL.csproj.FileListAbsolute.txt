@@ -116,42 +116,39 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\se
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.pdb
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\serverSide\02.06.19\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-<<<<<<< HEAD
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll.config
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.pdb
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.dll
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.xml
-D:\gi_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\gi_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-D:\gi_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\gi_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\gi_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
-D:\gi_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb
-=======
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll.config
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.pdb
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.dll
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.xml
-D:\Git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
-D:\Git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb
->>>>>>> a5991d401dbeb421095e988caae21634ccd515f3
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll.config
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.dll
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\DAL.pdb
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.dll
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.xml
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.dll
-D:\תכנות\git_repository\ctrlP\serverSide\DAL\obj\Debug\DAL.pdb
+E:\02.06.19\serverSide\DAL\bin\Debug\DAL.dll.config
+E:\02.06.19\serverSide\DAL\bin\Debug\DAL.dll
+E:\02.06.19\serverSide\DAL\bin\Debug\DAL.pdb
+E:\02.06.19\serverSide\DAL\bin\Debug\EntityFramework.dll
+E:\02.06.19\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\02.06.19\serverSide\DAL\bin\Debug\EntityFramework.xml
+E:\02.06.19\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\02.06.19\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\02.06.19\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\02.06.19\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\02.06.19\serverSide\DAL\obj\Debug\DAL.dll
+E:\02.06.19\serverSide\DAL\obj\Debug\DAL.pdb
+E:\FinalProject\serverSide\DAL\bin\Debug\DAL.dll.config
+E:\FinalProject\serverSide\DAL\bin\Debug\DAL.dll
+E:\FinalProject\serverSide\DAL\bin\Debug\DAL.pdb
+E:\FinalProject\serverSide\DAL\bin\Debug\EntityFramework.dll
+E:\FinalProject\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\FinalProject\serverSide\DAL\bin\Debug\EntityFramework.xml
+E:\FinalProject\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\FinalProject\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\FinalProject\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\FinalProject\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\FinalProject\serverSide\DAL\obj\Debug\DAL.dll
+E:\FinalProject\serverSide\DAL\obj\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\DAL.dll.config
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\DAL.pdb
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\EntityFramework.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\EntityFramework.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\obj\Debug\DAL.dll
+Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\DAL\obj\Debug\DAL.pdb

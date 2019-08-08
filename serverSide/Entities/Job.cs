@@ -10,10 +10,11 @@ namespace Entities
     {
         public int jobId { get; set; }
         public string  userTz { get; set; }
-        public int copy { get; set; }//עותקים
+        public int copy { get; set; }
         public int numOfPages { get; set; }
-        public byte size { get; set; }//???????????????????
+        public byte size { get; set; }
         public bool isColorFull { get; set; }
+        public string printerName { get; set; }
 
     }
 }

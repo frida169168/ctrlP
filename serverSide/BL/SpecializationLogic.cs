@@ -16,7 +16,7 @@ namespace BL
         public static List<SpecializationDTO> GetSpecializationList()
         {
             List<SpecializationDTO> specializations = new List<SpecializationDTO>();
-            db.Specializations.ToList().ForEach(f => specializations.Add( SpecializationCast.CastToDTO(f)));
+           db.Specializations.ToList().ForEach(f => specializations.Add( SpecializationCast.CastToDTO(f)));
             return specializations;
         }
         public static  SpecializationDTO GetDetailsSpecialization(int id)

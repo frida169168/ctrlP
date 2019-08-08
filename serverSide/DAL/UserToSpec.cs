@@ -14,9 +14,9 @@ namespace DAL
     
     public partial class UserToSpec
     {
+        public int userTospecId { get; set; }
         public int userId { get; set; }
         public int specId { get; set; }
-        public Nullable<int> userTospecId { get; set; }
     
         public virtual Specialization Specialization { get; set; }
         public virtual User User { get; set; }

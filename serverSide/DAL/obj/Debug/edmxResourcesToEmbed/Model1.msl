@@ -70,15 +70,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="UserToSpecs">
-      <EntityTypeMapping TypeName="controlPrintModel.UserToSpec">
-        <MappingFragment StoreEntitySet="UserToSpec">
-          <ScalarProperty Name="userId" ColumnName="userId" />
-          <ScalarProperty Name="specId" ColumnName="specId" />
-          <ScalarProperty Name="userTospecId" ColumnName="userTospecId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Prices">
       <EntityTypeMapping TypeName="controlPrintModel.Price">
         <MappingFragment StoreEntitySet="Price">
@@ -94,6 +85,15 @@
         <MappingFragment StoreEntitySet="SizeOfPage">
           <ScalarProperty Name="sizeName" ColumnName="sizeName" />
           <ScalarProperty Name="sizeId" ColumnName="sizeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserToSpecs">
+      <EntityTypeMapping TypeName="controlPrintModel.UserToSpec">
+        <MappingFragment StoreEntitySet="UserToSpec">
+          <ScalarProperty Name="specId" ColumnName="specId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="userTospecId" ColumnName="userTospecId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

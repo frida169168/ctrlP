@@ -13,6 +13,5 @@ namespace DTO
         public Nullable<int> sizeId { get; set; }
         public double ? priceBlackWhite { get; set; }
         public double? priceColorFull { get; set; }
-
     } 
 }

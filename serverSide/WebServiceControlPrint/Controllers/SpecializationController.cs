@@ -10,28 +10,28 @@ using DTO;
 namespace WebServiceControlPrint.Controllers
 {
 
-    [RoutePrefix("api/Specialization")]
+    [RoutePrefix("api/specialization")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class SpecializationController : ApiController
     {
-       
-        [HttpGet]
-        [Route("GetSpecializationList")]
 
-        public HttpResponseMessage GetDetailsSpecialization()
+        [HttpGet]
+        [Route("get-specs")]
+
+        public HttpResponseMessage GetSpecs()
         {
-          List< SpecializationDTO >dTO = new List<SpecializationDTO>();
+            List<SpecializationDTO> dTO = new List<SpecializationDTO>();
             dTO = BL.SpecializationLogic.GetSpecializationList();
-            if (dTO != null&&dTO.Count!=0)
+            if (dTO != null)
             {
                 return Request.CreateResponse(HttpStatusCode.OK, dTO);
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
         }
         [HttpPost]
-        [Route("GetDetailsSpecialization/{id}")]
+        [Route("get-details-spec")]
 
-        public HttpResponseMessage GetDetailsSpecialization(int id)
+        public HttpResponseMessage GetDetailsSpec(int id)
         {
             SpecializationDTO dTO = new SpecializationDTO();
             dTO = BL.SpecializationLogic.GetDetailsSpecialization(id);
@@ -41,34 +41,34 @@ namespace WebServiceControlPrint.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
         }
-        [HttpPost]
-        [Route("AddSpecialization/{specializationDTO}")]
-        public HttpResponseMessage AddeSpecialization(SpecializationDTO specializationDTO)
-        {
-            
-            BL.SpecializationLogic.AddSpecialization(specializationDTO);
-            if (specializationDTO != null)
-            {
-                return Request.CreateResponse(HttpStatusCode.OK);
-            }
-            return Request.CreateResponse(HttpStatusCode.NotFound);
+        //[HttpPost]
+        //[Route("add-specialization")]
+        //public HttpResponseMessage AddeSpecialization(SpecializationDTO specializationDTO)
+        //{
 
-        }
-        [HttpPost]
-        [Route("RemoveSpecialization/{specializationDTO}")]
-public HttpResponseMessage RemoveSpecialization(SpecializationDTO specializationDTO)
-        {
-            //מחזירים OK ומתי FAךSE מחזירים פונקציה האם נכון מתי   VOID מה עושים עם
-            // SpecializationDTO dTO = new SpecializationDTO();
-            // dTO=BL.SpecializationLogic.AddSpecialization(specializationDTO)
-            BL.SpecializationLogic.RemoveSpecialization(specializationDTO);
-            if (specializationDTO != null)
-            {
-                return Request.CreateResponse(HttpStatusCode.OK);
-            }
-            return Request.CreateResponse(HttpStatusCode.NotFound);
-            
-        }
+        //    BL.SpecializationLogic.AddSpecialization(specializationDTO);
+        //    if (specializationDTO != null)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.OK);
+        //    }
+        //    return Request.CreateResponse(HttpStatusCode.NotFound);
+
+        //}
+        //[HttpPost]
+        //[Route("removeSpecialization")]
+        //public HttpResponseMessage RemoveSpecialization(SpecializationDTO specializationDTO)
+        //{
+        //    //מחזירים OK ומתי FAךSE מחזירים פונקציה האם נכון מתי   VOID מה עושים עם
+        //    // SpecializationDTO dTO = new SpecializationDTO();
+        //    // dTO=BL.SpecializationLogic.AddSpecialization(specializationDTO)
+        //    BL.SpecializationLogic.RemoveSpecialization(specializationDTO);
+        //    if (specializationDTO != null)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.OK);
+        //    }
+        //    return Request.CreateResponse(HttpStatusCode.NotFound);
+
+        //}
     }
 
 }

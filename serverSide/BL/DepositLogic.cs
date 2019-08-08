@@ -19,8 +19,10 @@ namespace BL
             db.Deposits.Where(i => i.userId == userId).ToList().ForEach(w => deposits.Add(DepositCast.CastToDTO(w)));
             return deposits;            
         }
+        
         public static double? NewDeposit(DepositDTO depositDTO)
         {
+            
             db.Deposits.Add(DepositCast.CastToDAL(depositDTO));
             try
             {

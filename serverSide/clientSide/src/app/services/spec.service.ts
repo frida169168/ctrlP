@@ -16,6 +16,6 @@ export class SpecService {
   constructor(private http:HttpClient) { }
 
   getAllSpec():Observable<Specialization[]>{
-    return this.http.get<Specialization[]>(this.baseURL+"/get-spec");
+    return this.http.get<Specialization[]>(this.baseURL+"/get-specs");
   }
 }

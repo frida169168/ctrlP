@@ -18,42 +18,42 @@ namespace BL
             List<Price> ls = new List<Price>();
             db.SizeOfPages.Add(SizeOfPageCast.CastToDAL(sheet.SizeOfPage));
             db.Prices.Add(PriceCast.CastToDAL(sheet.price));
-   //         sheet.prices.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
+            //         sheet.prices.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
             db.Prices.AddRange(ls);
             db.SaveChanges();
         }
-        public static void DeleteSheet(PrintingSheetDTO sheet)
-        {
-            List<Price> ls = new List<Price>();
-            db.SizeOfPages.Remove(SizeOfPageCast.CastToDAL(sheet.SizeOfPage));
-            // sheet.price.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
-            db.Prices.Remove(PriceCast.CastToDAL(sheet.price));
-            db.SaveChanges();
-        }
+        //public static void DeleteSheet(PrintingSheetDTO sheet)
+        //{
+        //    List<Price> ls = new List<Price>();
+        //    db.SizeOfPages.Remove(SizeOfPageCast.CastToDAL(sheet.SizeOfPage));
+        //    // sheet.price.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
+        //    db.Prices.Remove(PriceCast.CastToDAL(sheet.price));
+        //    db.SaveChanges();
+        //}
         /// <summary>
         /// האם זה נכון?????????????????????????????????????????
         /// </summary>
         /// <param name="sizeId"></param>
-        //public static void DeleteSheet(int sizeId) // משנים לאיךDELETE
-        //{
-        //    //PrintingSheetDTO sheetDTO=db.
-        //    List<Price> ls = new List<Price>();
+        public static void DeleteSheet(int sizeId) // משנים לאיךDELETE
+        {
+            //PrintingSheetDTO sheetDTO=db.
+            List<Price> ls = new List<Price>();
 
-        //db.SizeOfPages.Remove(db.SizeOfPages.FirstOrDefault(i=>i.sizeId== sizeId));
-        //    // sheet.price.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
-        //    db.Prices.Remove(db.Prices.FirstOrDefault(p=>p.sizeId==sizeId));
-        //    db.SaveChanges();
-        //}
+            db.SizeOfPages.Remove(db.SizeOfPages.FirstOrDefault(i => i.sizeId == sizeId));
+            // sheet.price.ToList().ForEach(s => ls.Add(PriceCast.CastToDAL(s)));
+            db.Prices.Remove(db.Prices.FirstOrDefault(p => p.sizeId == sizeId));
+            db.SaveChanges();
+        }
         public static List<PrintingSheetDTO> GetSheets()
-        {    
-            
-            List<PrintingSheetDTO> sheets = new List<PrintingSheetDTO>();           
-            
+        {
+
+            List<PrintingSheetDTO> sheets = new List<PrintingSheetDTO>();
+
             db.SizeOfPages.ToList().ForEach(w =>
             {
                 var t = new PrintingSheetDTO() { SizeOfPage = new SizeOfPageDTO() { sizeId = w.sizeId, sizeName = w.sizeName } };
-              var d=  db.Prices.ToList().FirstOrDefault(x => x.sizeId == w.sizeId);
-                t.price=PriceCast.CastToDTO(d);
+                var d = db.Prices.ToList().FirstOrDefault(x => x.sizeId == w.sizeId);
+                t.price = PriceCast.CastToDTO(d);
                 sheets.Add(t);
             });
 
@@ -71,18 +71,15 @@ namespace BL
 
         //    return sheets;
         //}
-        public static void UpdateSheet(PriceDTO priceDTO)
+        public static void UpdateSheet(PrintingSheetDTO printingSheetDTO)
         {
-            //    ////
-            //    SizeOfPage sizeOfPage = db.SizeOfPages.Where
-            //            (s => s.sizeId == sheetDTO.SizeOfPage.sizeId && s.Prices
-            //    .Where(p => p.sizeId == s.sizeId).FirstOrDefault().isColorFull == 
-            //    sheetDTO.prices.Where(p => p.sizeId == s.sizeId).FirstOrDefault().isColorFull).FirstOrDefault();
-            //    sizeOfPage.sizeName = sheetDTO.SizeOfPage.sizeName;
-            //        db.Prices.Where(p => p.sizeId == sheetDTO.SizeOfPage.sizeId)
-            //        .FirstOrDefault();
-            //    sizeOfPage.sizeName = sheetDTO.SizeOfPage.sizeName;
-            //    db.SaveChanges();
+
+            SizeOfPage size = db.SizeOfPages.FirstOrDefault(s => s.sizeId == printingSheetDTO.SizeOfPage.sizeId);
+            Price price = db.Prices.FirstOrDefault(p => p.priceId == printingSheetDTO.price.priceId);
+            size.sizeName = printingSheetDTO.SizeOfPage.sizeName;
+            price.priceBlackWhite = printingSheetDTO.price.priceBlackWhite;
+            price.priceColorFull = printingSheetDTO.price.priceColorFull;
+            db.SaveChanges();
         }
 
 

@@ -8,58 +8,77 @@ using System.Web.Http.Cors;
 using DAL;
 using DTO;
 using BL;
+using Entities;
 
 namespace WebServiceControlPrint.Controllers
 {
-    [RoutePrefix("api/User")]
+    [RoutePrefix("api/user")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UserController : ApiController
     {
-        //[HttpPost]
-        //public string k([FromBody]object name)
-        //{ return "ppppadsfdsfsdf"; }
         [HttpPost]
-        [Route("login")]///לשנות שיקבל USER
+        [Route("login")]
 
-        public HttpResponseMessage Login(UserDTO user)
+        public HttpResponseMessage Login(UserDTO userTz)
         {
-            UserDTO userDTO =UserLogic.Login(user.userTz);
+            UserDTO user = UserLogic.Login(userTz.userTz);
 
-            if (userDTO != null)
+            if (user != null)
             {
-                return Request.CreateResponse(HttpStatusCode.OK, userDTO);
+                return Request.CreateResponse(HttpStatusCode.OK, user);
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
         }
-        //[HttpPost]
-        //[Route("a")]///לשנות שיקבל USER
 
-        //public HttpResponseMessage a()
-        //{
-          
-        //        return Request.CreateResponse(HttpStatusCode.OK);
-        
-        //}
-        //[HttpPost]
-        //[Route("GetAllUsers")]///לשנות שיקבל USER
-
-        //public HttpResponseMessage getg(User user)
-        //{
-
-        //    return Request.CreateResponse(HttpStatusCode.OK, new List<UserDTO>() { new UserDTO() { userId = 1, userName = "chana" }, new UserDTO() { userId = 2, userName = "ggg" } });
-        //}
-        [HttpGet]
-        [Route("getStudents")]
-        public HttpResponseMessage getStudents()
-        {
-            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.getStudents());
-        }
         [HttpPost]
-        [Route("getBalance")]
-        public HttpResponseMessage getBalanceByUser(User user)
+        [Route("get-balance")]
+        public HttpResponseMessage GetBalanceByUser(UserDTO user)
         {
-            return Request.CreateResponse(HttpStatusCode.OK,UserLogic.getBalanceByUser(user));
+            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.getBalanceByUser(user));
         }
+        [HttpGet]
+        [Route("get-students")]
+        public HttpResponseMessage GetStudents()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.GetStudents());
+        }
+
+        [HttpGet]
+        [Route("get-students-with-specs")]
+        public HttpResponseMessage GetStudentsWithSpecs()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.GetStudentsWithSpecs());
+        }
+
+        [HttpPost]
+        [Route("allowd-to-print")]
+        public HttpResponseMessage allowdToPrint(Job job)
+        {
+
+            UserDTO user = UserLogic.Login(job.userTz);
+            double? AmountToPay, balance;
+            if (user != null)
+            {
+                balance = UserLogic.getBalanceByUser(user);
+                AmountToPay = JobLogic.CalaulateJob(job);
+                if (AmountToPay - balance >= 0)
+                {
+                    PrintHistoryLogic.AddPrint(new PrintHistoryDTO()
+                    {
+                        userId = user.userId,
+                        datePrint = DateTime.Now,
+                        costPrint = AmountToPay,
+                        isColorFull = job.isColorFull,
+                        sumOfPages = job.numOfPages,
+                        printerName = job.printerName
+
+                    });
+                    return Request.CreateResponse(HttpStatusCode.OK, "OK");
+                }
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Small_balance");
+            }
+            return Request.CreateResponse(HttpStatusCode.BadRequest, "User_doesnt_exist");
+        }
+        
     }
 }
-

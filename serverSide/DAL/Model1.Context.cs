@@ -32,8 +32,8 @@ namespace DAL
         public virtual DbSet<SpecializationKind> SpecializationKinds { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<UserToSpec> UserToSpecs { get; set; }
         public virtual DbSet<Price> Prices { get; set; }
         public virtual DbSet<SizeOfPage> SizeOfPages { get; set; }
+        public virtual DbSet<UserToSpec> UserToSpecs { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace BL.Casting
                 userId = user.userId,
                 userTz = user.userTz,
                 userName = user.userName,
-                entityTypeId = (eType)user.entityTypeId
+                entityTypeId =(DTO.Type) user.entityTypeId
                
             }; 
         }
@@ -42,7 +42,7 @@ namespace BL.Casting
                 userId = user.userId,
                 userTz = user.userTz,
                 userName = user.userName,
-                entityTypeId = (int)user.entityTypeId,
+                entityTypeId = (int)user.entityTypeId ,
                 //איך ממירים בחזרה את רשימת קודי ההתמחיות<<<<<<<<<<<<
                 
             };
