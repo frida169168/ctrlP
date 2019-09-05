@@ -1,59 +1,116 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input type="text" [(ngModel)]="searchTxt" (ngModelChange)="filterData()" placeholder="search name" matInput [formControl]="myControl">
-    
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>specializations</mat-label>
-    <mat-select [formControl]="multiSpec" (ngModelChange)="filterData()" multiple [(ngModel)]="specSearch" >
-      <mat-option *ngFor="let spec of specializations" [value]="spec.specId">{{spec.specName}}</mat-option>
-    </mat-select>
-  </mat-form-field>
-</form>
+<div class="warp_links">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item routerLink="../setStaffPasword">
+      <mat-icon>lock</mat-icon>
+      <span>שינוי סיסמא</span>
+    </a>
+    <a mat-menu-item routerLink="../sheetSetting">
+      <mat-icon>insert_drive_file</mat-icon>
+      <span>דפים ומחירים</span>
+    </a>
+    <a mat-menu-item routerLink="../staff">
+      <mat-icon>person</mat-icon>
+      <span>עדכון חשבונות</span>
+    </a>
+  </mat-menu>
 
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Amount" type="number" class="example-right-align">
-    <span matPrefix>$&nbsp;</span>
-    <span matSuffix>.00</span>
-  </mat-form-field>
-  <button mat-flat-button (click)="LoadingMoney()" class="bt">Load</button>
+
+  <a mat-icon-button routerLink="">
+    <mat-icon>exit_to_app</mat-icon>
+  </a>
 </div>
+
+
+<div class="warp_filter_load">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input type="text" [(ngModel)]="searchTxt" (ngModelChange)="filterData()" placeholder="שם תלמידה" matInput
+        [formControl]="myControl">
+
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>התמחות</mat-label>
+      <mat-select [formControl]="multiSpec" (ngModelChange)="filterData()" multiple [(ngModel)]="specSearch">
+        <mat-option *ngFor="let spec of specializations" [value]="spec.specId">{{spec.specName}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  <br>
+  <div class="example-container">
+    <form #Form="ngForm">
+      <mat-form-field>
+        <input type="number" matInput placeholder="סכום לטעינה" name="amountStaff" [(ngModel)]="depositAmount"
+          ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" required>
+        <span matPrefix>&#8362;</span>
+      </mat-form-field>
+      <button mat-flat-button (click)="onCharging()" class="bt" [disabled]="!Form.form.valid">טען</button>
+    </form>
+  </div>
+</div>
+
+
+
+
 
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
-    
+
     <ng-container matColumnDef="select">
       <th mat-header-cell *matHeaderCellDef>
-        <mat-checkbox (change)="$event ? masterToggle() : null"
-                      [checked]="selection.hasValue() && isAllSelected()"
-                      [indeterminate]="selection.hasValue() && !isAllSelected()"
-                      [aria-label]="checkboxLabel()">
+        <mat-checkbox class="cb" (change)="$event ? masterToggle() : null"
+          [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()"
+          [aria-label]="checkboxLabel()">
         </mat-checkbox>
       </th>
       <td mat-cell *matCellDef="let row">
-        <mat-checkbox (click)="$event.stopPropagation()"
-                      (change)="$event ? selection.toggle(row) : null"
-                      [checked]="selection.isSelected(row)"
-                      [aria-label]="checkboxLabel(row)">
+        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+          [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
         </mat-checkbox>
       </td>
-    </ng-container> 
+    </ng-container>
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> שם </th>
       <td mat-cell *matCellDef="let student"> {{student.userName}} </td>
     </ng-container>
+
     <ng-container matColumnDef="specs">
       <th mat-header-cell *matHeaderCellDef> התמחויות </th>
       <td mat-cell *matCellDef="let student"> {{student.specs?listToString(student.specs):''}} </td>
     </ng-container>
 
+    <ng-container matColumnDef="balance">
+      <th mat-header-cell *matHeaderCellDef> יתרה </th>
+      <td mat-cell *matCellDef="let student">{{student.balance | currency:'ILS'}} </td>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="star" stickyEnd>
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" (click)="f()">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item >
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>          
+        </mat-menu>
+      </td>
+    </ng-container> -->
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"(click)="selection.toggle(row)"></tr>   
-    
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)"></tr>
+
   </table>
 
-  <mat-paginator [pageSizeOptions]="[20, 50, 70]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSize]="20" [pageSizeOptions]="[20, 50, 70]" showFirstLastButtons></mat-paginator>
 </div>

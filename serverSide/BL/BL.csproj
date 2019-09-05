@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -58,15 +59,14 @@
     <Compile Include="Casting\PrintHistoryCast.cs" />
     <Compile Include="Casting\SizeOfPageCAst.cs" />
     <Compile Include="Casting\SpecializationCast.cs" />
-    <Compile Include="Casting\SpecializationKindCast.cs" />
     <Compile Include="Casting\UserCast.cs" />
     <Compile Include="Casting\UserTospecCast.cs" />
     <Compile Include="DepositLogic.cs" />
     <Compile Include="JobLogic.cs" />
     <Compile Include="PriceLogic.cs" />
     <Compile Include="PrinitingSheetLogic.cs" />
-    <Compile Include="readExeclLogic.cs" />
-    <Compile Include="readSpecFromExcel.cs" />
+    <Compile Include="ReadExcel-Specialization.cs" />
+    <Compile Include="ReadExcel-Students.cs" />
     <Compile Include="SpecializationLogic.cs" />
     <Compile Include="UserLogic.cs" />
     <Compile Include="PrintHistoryLogic.cs" />

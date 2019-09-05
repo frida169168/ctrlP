@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../services/user.service';
+import { UserService } from '../../services/user.service';
 import Swal from 'sweetalert2'
 @Component({
   selector: 'app-set-staff-pasword',
@@ -8,23 +8,23 @@ import Swal from 'sweetalert2'
 })
 
 export class SetStaffPaswordComponent implements OnInit {
-oldPass:string;
-checkNewPass:string;
-newPass:string;
-  constructor(private userSer:UserService) { }
+  oldPass: string;
+  checkNewPass: string;
+  newPass: string;
+  constructor(private userSer: UserService) { }
 
-  test(){
+  test() {
     console.log(this.oldPass)
   }
 
   ngOnInit() {
-  } 
-  isPassCorect(){
+  }
+  isPassCorect() {
     console.log(this.userSer.checkOldPass(this.oldPass));
     return this.userSer.checkOldPass(this.oldPass);
   }
-  chanagePass(){
-    this.userSer.updatePass(this.newPass).subscribe(res=>{
+  chanagePass() {
+    this.userSer.updatePass(this.newPass).subscribe(res => {
       debugger;
       Swal.fire({
         position: 'center',
@@ -34,20 +34,15 @@ newPass:string;
         timer: 1500
       })
     }
-    ,err=>{
-      Swal.fire({
-        position: 'center',
-        type: 'error',
-        title: 'oops ארעה שגיעה נסה שוב!!!!!',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    }
-
+      , err => {
+        Swal.fire({
+          position: 'center',
+          type: 'error',
+          title: 'oops ארעה שגיעה נסה שוב!!!!!',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
     )
-
-
   }
-    
-    
-  }
+}

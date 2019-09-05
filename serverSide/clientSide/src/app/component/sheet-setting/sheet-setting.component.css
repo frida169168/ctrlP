@@ -1,0 +1,27 @@
+.mat-flat-button{
+    background-color: #e85a61;
+  }
+.prev{
+  margin-left: 60px;
+}
+  table {
+    width: 80%;
+    /* direction: rtl; */
+    padding: 20px;
+  }
+  th{
+    font-size: medium;
+    color: crimson;
+  }
+  .mat-elevation-z8{
+    width: 60vw;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .btn_new{
+    margin-left: 160px;
+    margin-top: 20px;
+  }
+ 
+
+ 

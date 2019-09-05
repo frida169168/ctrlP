@@ -13,7 +13,7 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 namespace Logic
 {
-    public class MyJob
+    public class Job
     {
         public int JobId { get; set; }
         public string UserTz { get; set; }
@@ -23,7 +23,7 @@ namespace Logic
         public bool IsColorFull { get; set; }
         public string PrinterName { get; set; }
 
-        public MyJob(PrintJob jobInfo)
+        public Job(PrintJob jobInfo)
         {
             JobId = jobInfo.JobId;
             Copy = jobInfo.Copies;
@@ -55,30 +55,43 @@ namespace Logic
         //    proc.WaitForExit();
         //    UserTz = proc.ExitCode.ToString();
         //}
-        public void OpenWinForm(string machineName, string response)
+
+
+        /// <summary>
+        /// בדיקה האם ההדפסה צבעונית או שחור לבן
+        /// </summary>
+        public void SetIsColorFull(string printerName)
         {
-            //מה קורה שנשרשר null 
+            List<string> colorList = ConfigurationManager.AppSettings["IsColor"].Split(',').ToList();
+            foreach (var item in colorList)
+            {
+                if (printerName.Contains(item))
+                    IsColorFull = true;
+            }
+            IsColorFull = false;
+        }
+
+        public void OpenWinForm(string machineName, string message = "")
+        {
             string path = ConfigurationManager.AppSettings["PathToWinForm"] + " " + response;
+
             var proc = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = ConfigurationManager.AppSettings["PathToPsExec"],
-                    Arguments = $"psexec  ${machineName}  {path}",
+                    Arguments = $"psexec -i -s  \\\\{machineName} {path}",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
                     CreateNoWindow = true
                 }
             };
-            proc.Start();
-            if (response == null)
-            {
-                proc.WaitForExit();
-                UserTz = proc.ExitCode.ToString();
-            }
-        }
 
-        public async Task<string> RunAsync(string route)
+            proc.Start();
+            proc.WaitForExit();
+            this.UserTz = proc.ExitCode.ToString();
+        }
+        public async Task<string> ConnectToServer(string route)
         {
             using (var client = new HttpClient())
             {
@@ -92,18 +105,11 @@ namespace Logic
             }
         }
 
-        public void SetIsColorFull(string printerName)
-        {
-            List<string> colorList = ConfigurationManager.AppSettings["IsColor"].Split(',').ToList();
-            foreach (var item in colorList)
-            {
-                if (printerName.Contains(item))
-                    IsColorFull = true;
-            }
-            IsColorFull = false;
-        }
 
-        public void PromotionalAccount()//מחזירה את הסכום למשתמש שהדפסתו בוטלה
+
+      
+
+        public static void PromotionalAccount(int jobId)//מחזירה את הסכום למשתמש שהדפסתו בוטלה
         {//to do :  write function in the server
             Task.Run(() => RunAsync(""));
         }

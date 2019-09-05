@@ -5,12 +5,12 @@
     <input matInput placeholder="גודל דף" name="size" [(ngModel)]="data.SizeOfPage.sizeName" required>
   </mat-form-field>
   <mat-form-field class="example-full-width">
-      <input matInput placeholder="מחיר שחור לבו" name="color"  [(ngModel)]="data.price.priceBlackWhite" required>
+      <input matInput placeholder="מחיר שחור לבן" name="color"  [(ngModel)]="data.price.priceBlackWhite" required>
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <input matInput placeholder="מחיר צבועני" name="price"  [(ngModel)]="data.price.priceColorFull" required>
   </mat-form-field>
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="{myData: data, isOK: true}" cdkFocusInitial>עדכן</button>
+  <button mat-flat-button mat-dialog-close>Cancel</button>
+  <button mat-flat-button [mat-dialog-close]="{myData: data, isOK: true}" cdkFocusInitial>עדכן</button>
 </div>
 </form>

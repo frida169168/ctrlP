@@ -1,6 +1,17 @@
-<form class="login-form" #loginForm="ngForm" (ngSubmit)="onLogin()">
-    <mat-form-field class="example-full-width">
-        <input type="password" matInput placeholder="הכניסי סיסמא" name="password" [(ngModel)]="user.userTz" required>
-    </mat-form-field>
-    <button type="submit" mat-flat-button [disabled]="!loginForm.form.valid">כניסה</button>
-</form>
+<div class="box">
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+        <mat-form-field appearance="outline">
+            <mat-label>שם משתמש</mat-label>
+            <input matInput name="name" [(ngModel)]="user.userName" required>
+            <mat-icon matSuffix>account_box</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>סיסמא</mat-label>
+            <input type="password" name="password" matInput [(ngModel)]="user.userTz" required>
+            <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-flat-button class="bt" [disabled]="!loginForm.form.valid">כניסה</button>
+    </form>
+</div>

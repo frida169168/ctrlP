@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import {Sheet} from 'src/app/model/sheet'
+import {Sheet} from 'src/app/model/Sheet'
 import { SheetService } from '../../services/sheet.service';
 
 @Component({

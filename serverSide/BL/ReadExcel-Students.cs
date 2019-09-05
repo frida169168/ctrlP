@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,9 @@ namespace BL
         public static controlPrintEntities db = new controlPrintEntities();
         public static void readExeclLogic()
         {
-
-            using (SpreadsheetDocument spreadSheetDocument = SpreadsheetDocument.Open(@"D:\studentList.xlsx", true))
-            {
+            string x=ConfigurationManager.AppSettings["PathStudentExcel"];
+            using (SpreadsheetDocument spreadSheetDocument = SpreadsheetDocument.Open(@"../WebServiceControlPrint/uploads/x", true))
+            {                
                 WorkbookPart workbookPart = spreadSheetDocument.WorkbookPart;
                 IEnumerable<Sheet> sheets = spreadSheetDocument.WorkbookPart.Workbook.GetFirstChild<Sheets>().Elements<Sheet>();
                 string relationshipId = sheets.First().Id.Value;

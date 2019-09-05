@@ -12,14 +12,22 @@ namespace BL
    public static class DepositLogic
     {
         public static controlPrintEntities db = new controlPrintEntities();
-        //מחזיר רשימת הפקדות לפי ת"ז
-        public static List<DepositDTO> GetDeposits(int userId)
+        ////מחזיר רשימת הפקדות לפי ת"ז
+        //public static List<DepositDTO> GetDeposits(int userId)
+        //{
+        //    List<DepositDTO> deposits = new List<DepositDTO>();
+        //    db.Deposits.Where(i => i.userId == userId).ToList().ForEach(w => deposits.Add(DepositCast.CastToDTO(w)));
+        //    return deposits;
+        //}
+
+        
+        public static List<DepositDTO> GetDeposits()
         {
             List<DepositDTO> deposits = new List<DepositDTO>();
-            db.Deposits.Where(i => i.userId == userId).ToList().ForEach(w => deposits.Add(DepositCast.CastToDTO(w)));
-            return deposits;            
+            db.Deposits.ToList().ForEach(w => deposits.Add(DepositCast.CastToDTO(w)));
+            return deposits;
         }
-        
+
         public static double? NewDeposit(DepositDTO depositDTO)
         {
             

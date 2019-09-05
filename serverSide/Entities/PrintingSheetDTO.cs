@@ -12,6 +12,5 @@ namespace DTO
         public SizeOfPageDTO SizeOfPage { get; set; }
 
         public PriceDTO price { get; set; }
-
     }
 }

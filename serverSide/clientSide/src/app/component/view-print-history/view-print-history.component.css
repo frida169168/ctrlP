@@ -1,0 +1,11 @@
+table {
+    width: 60%;
+    margin: auto;
+  }
+  th{
+      font-size: medium;
+  }
+  .prev{
+    margin-left: 60px;
+  }
+  

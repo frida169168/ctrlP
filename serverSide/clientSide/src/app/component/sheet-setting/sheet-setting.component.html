@@ -1,16 +1,50 @@
+<a mat-button class="prev" routerLink="../loadingStaff">
+  <mat-icon>arrow_back_ios</mat-icon>חזור
+</a>
 
-<!-- <ng-container matColumnDef="actions">
-  <mat-header-cell *matHeaderCellDef>
-    <button mat-icon-button color="primary" (click)="dialogAdd()">
-      <mat-icon aria-label="Example icon-button with a heart icon">הוספה</mat-icon>
-    </button>
-  </mat-header-cell> -->
+<button mat-flat-button class="btn_new" (click)="dialogAdd()"> דף חדש
+  <mat-icon>add</mat-icon>
+</button>
 
-<button (click)="dialogAdd()"> add</button>
-<div *ngFor="let sheet of sheets">
-  <h1  >{{sheet.SizeOfPage?.sizeName}}</h1>
-  <p  >צבעוני:  {{sheet.price?.priceColorFull}}</p>
-  <p >שחור לבן:  {{sheet.price?.priceBlackWhite}}</p>
-  <button value="מחק" (click)="dialogDelete(sheet.SizeOfPage.sizeId)"> מחק</button>
-  <button mat-raised-button (click)="openDialog(sheet)">עריכה</button>
-</div>
+
+<table mat-table [dataSource]="sheets" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="sizeName">
+    <th mat-header-cell *matHeaderCellDef> גודל </th>
+    <td mat-cell *matCellDef="let sheet"> {{sheet.SizeOfPage.sizeName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="priceBlackWhite">
+    <th mat-header-cell *matHeaderCellDef> מחיר לשחור לבן </th>
+    <td mat-cell *matCellDef="let sheet"> {{sheet.price.priceBlackWhite | currency:'ILS'}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="priceColorFull">
+    <th mat-header-cell *matHeaderCellDef> מחיר לצבעוני </th>
+    <td mat-cell *matCellDef="let sheet"> {{sheet.price.priceColorFull | currency:'ILS'}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="deleteIcon" stickyEnd>
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let sheet">
+
+      <button mat-icon-button (click)="dialogDelete(sheet.SizeOfPage.sizeId)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="editIcon" stickyEnd>
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let sheet">
+
+      <button mat-icon-button (click)="openDialog(sheet)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

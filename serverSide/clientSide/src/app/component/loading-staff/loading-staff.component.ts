@@ -13,6 +13,8 @@ import { eType } from 'src/app/model/eType';
 import { MatTableDataSource } from '@angular/material/table';
 import { SelectionModel } from '@angular/cdk/collections';
 import { StudentWithSpecs } from 'src/app/model/StudentWithSpecs';
+import { Deposit } from 'src/app/model/Deposit';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loading-staff',
@@ -26,25 +28,24 @@ export class LoadingStaffComponent implements OnInit {
   multiSpec = new FormControl();
   specSearch: number[];
   searchTxt: string;
- 
-  studentsWithSpecs: StudentWithSpecs[]=[];
-
-  
+  deposits:Deposit[]=[];
+  studentsWithSpecs: StudentWithSpecs[] = [];
+  depositAmount:number;
+  deposit:Deposit;
   filteredStudents: Observable<StudentWithSpecs[]>;
 
-  displayedColumns: string[] = ['select', 'name', 'specs'];
-  dataSource ;
-  specializations:Specialization[] = [];
+  displayedColumns: string[] = ['select', 'name', 'specs','balance'];
+  dataSource;
+  specializations: Specialization[] = [];
   selection = new SelectionModel<StudentWithSpecs>(true, []);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  constructor(private specServ: SpecService, private userServ: UserService) { }
+  constructor(private specServ: SpecService, private userServ: UserService,private route:Router) { }
 
   ngOnInit() {
     this.getStudents();
-    this.getAllSpec();
-   
+    this.getSpecialization();
 
     this.filteredStudents = this.myControl.valueChanges
       .pipe(
@@ -52,21 +53,22 @@ export class LoadingStaffComponent implements OnInit {
         map(value => typeof value === 'string' ? value : value['userName']),
         map(name => name ? this._filter(name) : this.studentsWithSpecs.slice())
       );
-    
   }
 
-
   filterData() {
-    var value = this.dataSource.data;
+    console.log('this.multiSpec.value', this.multiSpec.value)
+    var value = this.studentsWithSpecs;
     if (value && this.searchTxt != '' && this.searchTxt != null) {
       value = value.filter(f => f.userName.indexOf(this.searchTxt) >= 0);
     }
-    if (value  && this.multiSpec.value != null) {
-      value= value.filter((f => {
-        var exist = true;
+    if (value && this.multiSpec.value != null && this.multiSpec.value.length > 0) {
+      value = value.filter((f => {
+        var exist = false;
         this.multiSpec.value.forEach(s => {
-          if (!f.specs.find(d => d.specId == s))
-            exist = false;
+          if (f.specs.find(d => d.specId == s)) {
+            exist = true;
+          }
+
         });
         if (exist) {
           return f;
@@ -106,36 +108,37 @@ export class LoadingStaffComponent implements OnInit {
   }
 
   checkboxLabel(row?: StudentWithSpecs): string {
-    console.log('row is', row)
-    console.log('selection: ', this.selection)
     if (!row) {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.userId + 1}`;
   }
 
-  getAllSpec(){
-    this.specServ.getAllSpec().subscribe(res=>{ 
-      for (const resValue of res){     
-        this.specializations.push(resValue);
-      }      
-      alert(":)good spec")     
-    },err=>{
-      alert(":(spec")       
+  getSpecialization() {
+    this.specServ.getAllSpec().subscribe(res => {
+      this.specializations = res;
+    }, err => {
     })
   }
   getStudents() {
-      this.userServ.getStudentsWithSpecs().subscribe(res => {
-       this.studentsWithSpecs = res;
-       this.dataSource=new MatTableDataSource<StudentWithSpecs>(this.studentsWithSpecs);
-       this.dataSource.paginator = this.paginator;
+    this.userServ.getStudentsWithSpecs().subscribe(res => {
+      this.studentsWithSpecs = res;
+      this.dataSource = new MatTableDataSource<StudentWithSpecs>(this.studentsWithSpecs);
+      this.dataSource.paginator = this.paginator;
+    }, err => {
+    })
+  }
+  onCharging() {
+    this.selection.selected.forEach(element => {
+      this.deposit=new Deposit;
+      this.deposit.userId=element.userId;
+      this.deposit.depositAmount=this.depositAmount;
+      this.deposits.push(this.deposit);      
+    });;
+   this.userServ.depositForStudents(this.deposits).subscribe(res=>{alert("נטען בהצלחה")},err=>{})
+  }
 
- 
-      }, err => {
-      })
-    }
-    LoadingMoney(){
-      debugger;
-      console.log('LoadingMoney to: ' , this.selection.selected)
-    }
+  signOut(){
+    this.route.navigate(['']);
+  }
 }

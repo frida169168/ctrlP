@@ -13,38 +13,10 @@ namespace WebServiceControlPrint.Controllers
 {
     [RoutePrefix("api/printing-sheet")]
     [EnableCors(origins: "*", headers: "*", methods: "*")]
+
     public class PrintingSheetController : ApiController
     {
-      
-        [HttpPost]
-        [Route("add-sheet")]
-        public HttpResponseMessage AddSheet(PrintingSheetDTO printingSheet)
-        {
-
-            PrintingSheetLogic.AddSheet(printingSheet);
-            return Request.CreateResponse(HttpStatusCode.OK);
-
-        }        
-    
-        [HttpDelete]
-        [Route("remove-sheet/{sizeId}")]
-        public HttpResponseMessage RemoveSheet(int sizeId)
-        {
-
-            PrintingSheetLogic.DeleteSheet(sizeId);
-            return Request.CreateResponse(HttpStatusCode.OK);
-
-        }
-        [HttpPost]
-        [Route("update-sheet")]
-        public HttpResponseMessage UpdateSheet(PrintingSheetDTO printingSheet)
-        {
-
-            PrintingSheetLogic.UpdateSheet(printingSheet);
-            return Request.CreateResponse(HttpStatusCode.OK);
-
-        }
-       [HttpGet]
+        [HttpGet]
         [Route("get-sheets")]
         public HttpResponseMessage GetSheets()
         {
@@ -59,6 +31,35 @@ namespace WebServiceControlPrint.Controllers
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound);
             }
-        }   
+        }
+
+        [HttpPost]
+        [Route("add-sheet")]
+        public HttpResponseMessage AddSheet(PrintingSheetDTO printingSheet)
+        {
+            PrintingSheetLogic.AddSheet(printingSheet);
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        [HttpPost]
+        [Route("update-sheet")]
+        public HttpResponseMessage UpdateSheet(PrintingSheetDTO printingSheet)
+        {
+
+            PrintingSheetLogic.UpdateSheet(printingSheet);
+            return Request.CreateResponse(HttpStatusCode.OK);
+
+        }
+
+        [HttpDelete]
+        [Route("remove-sheet")]
+        public HttpResponseMessage RemoveSheet(int sizeId)
+        {
+
+            PrintingSheetLogic.DeleteSheet(sizeId);
+            return Request.CreateResponse(HttpStatusCode.OK);
+
+        }
+
     }
 }

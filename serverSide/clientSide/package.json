@@ -25,6 +25,8 @@
     "angular-material-fileupload": "^2.0.0",
     "core-js": "^2.5.4",
     "cors": "^2.8.5",
+    "mat-file-upload": "^1.0.0",
+    "ngx-toastr": "^10.2.0",
     "remove-node-modules": "^1.7.4",
     "rxjs": "~6.2.0",
     "sweetalert2": "^8.15.1",

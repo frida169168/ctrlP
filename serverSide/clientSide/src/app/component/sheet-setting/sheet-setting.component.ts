@@ -1,7 +1,7 @@
-import { Component, OnInit ,Inject} from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { SheetService } from 'src/app/services/sheet.service';
 import { Router } from '@angular/router';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { EditComponent } from '../edit/edit.component'
 import { min } from 'rxjs/operators';
 import { b, getRenderedText } from '@angular/core/src/render3';
@@ -17,86 +17,98 @@ import { AddSheetComponent } from '../add-sheet/add-sheet.component';
   styleUrls: ['./sheet-setting.component.css']
 })
 export class SheetSettingComponent implements OnInit {
-  constructor(private sheetService:SheetService,private route:Router,public dialog: MatDialog,private SheetService:SheetService) { }
-  public sheets :Sheet[]=[];
+  constructor(private sheetService: SheetService, private route: Router, public dialog: MatDialog, private SheetService: SheetService) { }
+
+  public sheets: Sheet[] = [];
+  displayedColumns: string[] = ['sizeName', 'priceBlackWhite', 'priceColorFull','deleteIcon','editIcon'];
+
+
   ngOnInit() {
- 
     this.showSheets();
- 
   }
-  showSheets(){
-    this.sheetService.getSheets().subscribe(res=>{
-      this.sheets=res;
-    },err=>{
-      debugger
+
+  showSheets() {
+    this.sheetService.getSheets().subscribe(res => {
+      this.sheets = res;
+      console.log(this.sheets);
+      
+    }, err => {
       alert("error");
     })
+   
   }
-  deleteSheet(sheetId){
-   this.sheetService.deleteSheet(sheetId).subscribe(res=>{ alert("נמחק בהצלחה")}),err=>{  alert("לא נמחק")}
-  }
-openDialog(sheet:Sheet): void {
-  const dialogRef = this.dialog.open(EditComponent, {
-    width: '350px',height:'350px',
-    data:{
-      price:
-      {
-        priceId:sheet.price.priceId,
-        priceBlackWhite:sheet.price.priceBlackWhite,
-        priceColorFull:sheet.price.priceColorFull,
-      },
-      SizeOfPage:
-      {sizeName:sheet.SizeOfPage.sizeName,
-        sizeId:sheet.SizeOfPage.sizeId
-      }
-    }
-  });
-  dialogRef.afterClosed().subscribe(result => {
-    if(result && result.isOK){
-     this.SheetService.EditSheet(result.myData).subscribe(x=>
-      {
-      this.showSheets();
-      }
-     );
-    console.log('The dialog was closed',result.myData);
-   }
-  });
-}
-dialogDelete(sheetId:Number) {
-  // this.id = schoolId;
-  const dialogRef = this.dialog.open(DeleteSheetComponent, {
-    data: sheetId
-  });
 
-  dialogRef.afterClosed().subscribe(result => {
-    if (result === 1) {
-      this.sheetService.deleteSheet(sheetId).subscribe(res=>{this.showSheets()});
-    }
-    this.showSheets();
-  });
-}   
-dialogAdd(sheet:Sheet):void{
-  const dialogRef=this.dialog.open(AddSheetComponent,
-    {    width: '350px',height:'350px',
-    data:{
-      price:
-      {
-        priceId:0,
-        priceBlackWhite:"",
-        priceColorFull:"",
-      },
-      SizeOfPage:
-      {
-        sizeName:"",
-        sizeId:0,
+  deleteSheet(sheetId) {
+    this.sheetService.deleteSheet(sheetId).subscribe(res => { alert("נמחק בהצלחה") }), err => { alert("לא נמחק") }
+  }
+
+  openDialog(sheet: Sheet): void {
+    const dialogRef = this.dialog.open(EditComponent, {
+      width: '350px', height: '350px',
+      data: {
+        price:
+        {
+          priceId: sheet.price.priceId,
+          priceBlackWhite: sheet.price.priceBlackWhite,
+          priceColorFull: sheet.price.priceColorFull,
+        },
+        SizeOfPage:
+        {
+          sizeName: sheet.sizeOfPage.sizeName,
+          sizeId: sheet.sizeOfPage.sizeId
+        }
       }
-}})
+    });
     dialogRef.afterClosed().subscribe(result => {
- 
+      if (result && result.isOK) {
+        this.SheetService.EditSheet(result.myData).subscribe(x => {
+          this.showSheets();
+        }
+        );
+        console.log('The dialog was closed', result.myData);
+      }
+    });
+  }
+  dialogDelete(sheetId: Number) {
+    // this.id = schoolId;
+    const dialogRef = this.dialog.open(DeleteSheetComponent, {
+      data: sheetId
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 1) {
+        this.sheetService.deleteSheet(sheetId).subscribe(res => { this.showSheets() });
+      }
+      this.showSheets();
+    });
+  }
+  dialogAdd(sheet: Sheet): void {
+    const dialogRef = this.dialog.open(AddSheetComponent,
+      {
+        width: '350px', height: '350px',
+        data: {
+          price:
+          {
+            priceId: 0,
+            priceBlackWhite: "",
+            priceColorFull: "",
+          },
+          SizeOfPage:
+          {
+            sizeName: "",
+            sizeId: 0,
+          }
+        }
+      })
+    dialogRef.afterClosed().subscribe(result => {
+
       if (result) {
-       
+
         this.showSheets();
       }
     });
-}
+  }
+  prev(){
+    this.route.navigate(['loadingStaff'])
+  }
 }

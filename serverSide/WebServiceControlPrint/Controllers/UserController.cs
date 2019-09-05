@@ -18,10 +18,9 @@ namespace WebServiceControlPrint.Controllers
     {
         [HttpPost]
         [Route("login")]
-
-        public HttpResponseMessage Login(UserDTO userTz)
+        public HttpResponseMessage Login(UserDTO userDTO)
         {
-            UserDTO user = UserLogic.Login(userTz.userTz);
+            UserDTO user = UserLogic.Login(userDTO);
 
             if (user != null)
             {
@@ -55,7 +54,7 @@ namespace WebServiceControlPrint.Controllers
         public HttpResponseMessage allowdToPrint(Job job)
         {
 
-            UserDTO user = UserLogic.Login(job.userTz);
+            UserDTO user = UserLogic.Login(new UserDTO() { userTz = job.userTz });
             double? AmountToPay, balance;
             if (user != null)
             {

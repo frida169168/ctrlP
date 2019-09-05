@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route } from '@angular/router';
 import { User } from 'src/app/model/User';
 import { UserService } from 'src/app/services/user.service';
 import { NodeCompatibleEventEmitter } from 'rxjs/internal/observable/fromEvent';
 import { Deposit } from 'src/app/model/Deposit';
 import { PrintHistory } from 'src/app/model/PrintHistory';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-loading',
@@ -12,45 +13,36 @@ import { PrintHistory } from 'src/app/model/PrintHistory';
   styleUrls: ['./loading.component.css']
 })
 export class LoadingComponent implements OnInit {
+
   user:User;
-  userBalance:number;
-  printHistory:PrintHistory[];
-  @Input()
+  userBalance:number;   
   deposit:Deposit=new Deposit();
-  constructor(private userSer:UserService) { 
+  inputDeposit:number;
 
-  }
+  constructor(private userServ:UserService,private toastr: ToastrService) { }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.getBalance();  
   }
 
   getBalance(){ 
-    this.user= this.userSer.user;
-    this.userSer.getBalanceByUser(this.user).subscribe(res=>{
-    this.userBalance=res;
-    console.log(this.userBalance)
+    this.user= this.userServ.user;
+    this.userServ.getBalanceByUser(this.user).subscribe(res=>{
+    this.userBalance=res    
     },err=>{
-    alert("blance isnt work :(")
+    console.log("GetBalance isn't work")
     }); 
   }
 
   onLoad(){    
     this.deposit.userId=this.user.userId;
     //this.deposit.depositDate=Date.now();????????????????????
-    this.userSer.newDeposit(this.deposit).subscribe(res=>{
+    this.userServ.newDeposit(this.deposit).subscribe(res=>{
       this.userBalance+=res;
+      this.inputDeposit=null;
+      this.deposit.depositAmount=null;
+      //this.toastr.success('Hello world!', 'Toastr fun!');
     },err=>{
     });
-  }
-
-  getPrintHostory(){
-    this.userSer.getPrinytHistory(this.user).subscribe(res=>{
-      this.printHistory=res;
-      alert("printHosrt works")
-    },err=>{
-      alert("printHosrt isnt works")
-
-    })
   }  
 }

@@ -1,0 +1,36 @@
+<a mat-button class="prev" routerLink="../loading">
+  <mat-icon>arrow_back_ios</mat-icon>חזור
+</a>
+
+
+<table mat-table [dataSource]="printHistories" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="datePrint">
+    <th mat-header-cell *matHeaderCellDef> תאריך </th>
+    <td mat-cell *matCellDef="let element"> {{element.datePrint}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="sumOfPages">
+    <th mat-header-cell *matHeaderCellDef> מספר דפים </th>
+    <td mat-cell *matCellDef="let element"> {{element.sumOfPages}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="isColorFull">
+    <th mat-header-cell *matHeaderCellDef> צבע </th>
+    <td mat-cell *matCellDef="let element"> {{element.isColorFull}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="printerName">
+    <th mat-header-cell *matHeaderCellDef> שם מדפסת </th>
+    <td mat-cell *matCellDef="let element"> {{element.printerName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="costPrint">
+    <th mat-header-cell *matHeaderCellDef> עלות </th>
+    <td mat-cell *matCellDef="let element"> {{element.costPrint}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

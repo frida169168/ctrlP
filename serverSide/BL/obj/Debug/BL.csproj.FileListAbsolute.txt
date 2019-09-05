@@ -146,3 +146,22 @@ Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\ser
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\BL\obj\Debug\BL.csproj.CopyComplete
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\BL\obj\Debug\BL.dll
 Y:\group 2 תשעט\רוזנברג רחלי\_FinalProject\06.08FINAL PROJECT\serverSide\BL\obj\Debug\BL.pdb
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\BL.dll.config
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\BL.dll
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\BL.pdb
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\DAL.dll
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\Entities.dll
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.dll
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.SqlServer.dll
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\DAL.pdb
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\DAL.dll.config
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\Entities.pdb
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\Entities.dll.config
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\DocumentFormat.OpenXml.xml
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.xml
+E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.SqlServer.xml
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csproj.CopyComplete
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.dll
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.pdb

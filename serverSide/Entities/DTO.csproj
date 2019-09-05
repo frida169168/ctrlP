@@ -57,7 +57,6 @@
     <Compile Include="SizeOfPageDTO.cs" />
     <Compile Include="PrintingSheetDTO.cs" />
     <Compile Include="SpecializationDTO.cs" />
-    <Compile Include="SpecializationKindDTO.cs" />
     <Compile Include="StudentWithSpec.cs" />
     <Compile Include="UserDTO.cs" />
     <Compile Include="UserToSpecDTO.cs" />

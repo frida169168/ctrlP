@@ -12,32 +12,45 @@ namespace Logic
     public class CatchPrintJobs
     {
         static PrinterQueueWatch.PrinterMonitorComponent PrinterMonitor;
+        /// <summary>
+        ///תפיסת אירוע הדפסה או מחיקה   
+        /// </summary>
         public CatchPrintJobs()
         {
             PrinterMonitor = new PrinterMonitorComponent();
             PrinterQueueWatch.PrintServer ps = new PrinterQueueWatch.PrintServer(ConfigurationManager.AppSettings["ServerName"]);
             ps.Printers.ForEach(p => PrinterMonitor.AddPrinter(p.PrinterName));
             PrinterMonitor.JobAdded += PrinterMonitor_JobAdded;
+            PrinterMonitor.JobDeleted += PrinterMonitor_JobDeleted;
         }
+
+        private static void PrinterMonitor_JobDeleted(object sender, PrintJobEventArgs e)
+        {
+            Job.PromotionalAccount(e.PrintJob.JobId);
+        }
+
+        /// <summary>
+        /// טיפול בארוע של הדפסה
+        /// </summary>
         private static void PrinterMonitor_JobAdded(object sender, PrintJobEventArgs e)
         { 
-            MyJob.PauseJob(e.PrintJob.JobId);
-            MyJob job = new MyJob(e.PrintJob);
+            Job.PauseJob(e.PrintJob.JobId);
+            Job job = new Job(e.PrintJob);
             string response=job.CheckPrintPermissions();
             if (response == "OK")
             {
-                MyJob.ResumeJob(e.PrintJob.JobId);
+                Job.ResumeJob(e.PrintJob.JobId);
             }
             else
             {
                 e.PrintJob.Cancel();
             }
-            job.OpenWinForm(e.PrintJob.MachineName, response);
-            while (e.PrintJob.Spooling) ;
-            if (!e.PrintJob.Printed)
-            {
-                job.PromotionalAccount();
-            }
+            job.OpenWinForm(e.PrintJob.MachineName, response);     
         }
     }
-}
+} 
+//while (e.PrintJob.Spooling) ;
+            //if (!e.PrintJob.Printed)
+            //{
+            //    job.PromotionalAccount();
+            //}

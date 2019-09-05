@@ -12,9 +12,8 @@ namespace Entities
         public string userTz { get; set; }
         public int userId { get; set; }
         public string userName { get; set; }
-
+        public double? balance { get; set; }
         public List<SpecializationDTO> specs { get; set; }
-
     }
 
 }

@@ -1,8 +1,8 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule, MatDialog, MAT_DIALOG_DATA, MatPaginatorModule, MatListModule, MatTableModule, MatIcon, MatIconModule, MatButtonToggleModule} from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatInputModule, MatAutocompleteModule, MatFormFieldModule, MatDialog, MAT_DIALOG_DATA, MatPaginatorModule, MatListModule, MatTableModule, MatIcon, MatIconModule, MatButtonToggleModule, MatSelectModule, MatMenuModule} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatFileUploadModule } from 'mat-file-upload'
 
 const modules = [ 
   MatButtonModule,
@@ -18,7 +18,11 @@ const modules = [
   MatTableModule,
   MatIconModule,
   MatCheckboxModule,
-  MatButtonToggleModule  
+  MatButtonToggleModule,
+  MatSelectModule,
+  MatPaginatorModule,
+  MatMenuModule,
+  MatFileUploadModule
  ]
 
 @NgModule({
