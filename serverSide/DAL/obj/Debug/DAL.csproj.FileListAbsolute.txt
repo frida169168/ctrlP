@@ -159,8 +159,8 @@ E:\FinalProject\Git_Repository\serverSide\DAL\bin\Debug\EntityFramework.dll
 E:\FinalProject\Git_Repository\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
 E:\FinalProject\Git_Repository\serverSide\DAL\bin\Debug\EntityFramework.xml
 E:\FinalProject\Git_Repository\serverSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
-E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.dll
 E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.pdb
+E:\FinalProject\Git_Repository\serverSide\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

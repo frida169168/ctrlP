@@ -7,7 +7,7 @@ using DTO;
 using DAL;
 using BL.Casting;
 namespace BL
-{//גמור!!!!!!!!!!!!!!!!!!!!
+{
     public class PriceLogic
     {
         public static controlPrintEntities db = new controlPrintEntities();

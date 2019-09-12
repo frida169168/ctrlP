@@ -16,12 +16,10 @@ export class LoginComponent implements OnInit {
   user: User = new User();
 
   constructor(private userService: UserService, private route: Router,
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer) {
-
-    this.matIconRegistry.addSvgIcon(
-      "avatar",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("../Images/avatar.svg"));
+     iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+      iconRegistry.addSvgIcon(
+        'avatar',
+        sanitizer.bypassSecurityTrustResourceUrl('/src/app/Images/avatar.svg'));    
   }  
 
   ngOnInit() {
@@ -41,7 +39,8 @@ export class LoginComponent implements OnInit {
       }
     }, err => {
         this.user.userName=null;  
-        this.user.userTz=null;       
+        this.user.userTz=null;    
+        alert("משתמש לא קיים!!!!")   
     })
 
   }

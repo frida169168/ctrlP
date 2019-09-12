@@ -23,6 +23,8 @@
 }
 th{
   font-size: medium;
+  background-color: #e85a61;
+  color: white;
 }
 .warp_links{
   display: inline-block;

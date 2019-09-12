@@ -50,6 +50,22 @@ namespace WebServiceControlPrint.Controllers
         }
 
         [HttpPost]
+        [Route("change-password")]
+        public HttpResponseMessage ChangePassword(UserDTO userDTO)
+        {
+            UserLogic.ChangePassword(userDTO);
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        [HttpGet]
+        [Route("get-teacher")]
+        public HttpResponseMessage GetTeacher()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, UserLogic.GetTeacher());
+        }
+
+
+        [HttpPost]
         [Route("allowd-to-print")]
         public HttpResponseMessage allowdToPrint(Job job)
         {
@@ -78,6 +94,8 @@ namespace WebServiceControlPrint.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.BadRequest, "User_doesnt_exist");
         }
+
+
         
     }
 }

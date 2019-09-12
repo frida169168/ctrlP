@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment.prod';
 import { Deposit } from '../model/Deposit';
 import { PrintHistory } from '../model/PrintHistory';
 import { StudentWithSpecs } from '../model/StudentWithSpecs';
+import { eType } from '../model/eType';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,9 @@ export class UserService {
   public baseURL: String = environment.apiUrl;
 
   public user: User;
-  public printHistories:PrintHistory[]=[];
+  public teacher: User = null;
+
+  public printHistories: PrintHistory[] = [];
 
   constructor(private http: HttpClient) { }
 
@@ -36,6 +39,7 @@ export class UserService {
   newDeposit(deposit): Observable<any> {
     return this.http.post<any>(this.baseURL + "/deposit/new-deposit", deposit)
   }
+
   depositForStudents(deposits): Observable<any> {
     return this.http.post<any>(this.baseURL + "/deposit/deposit-for-students", deposits)
   }
@@ -44,21 +48,38 @@ export class UserService {
     return this.http.post<PrintHistory[]>(this.baseURL + "/printHistory/printHistory-by-user", this.user)
   }
 
-  checkOldPass(oldPassWord) {
-    return oldPassWord == this.user.userTz;
+  checkOldPass(e: eType, oldPassword) {
+    if (e == eType.staff)
+      return oldPassword == this.user.userTz;
+    else if (e == eType.teacher) {
+      if (this.teacher == null)
+        this.getTeacher().subscribe(res => {
+          this.teacher = res;
+          return oldPassword == this.teacher.userTz;
+        }, err => { });
+      else
+        return oldPassword == this.teacher.userTz;
+    }
   }
 
-  validPass(newPass, validPass) {
-    return newPass = validPass;
+  updatePass(e: eType, newPassWord): Observable<any> {
+    if (e == eType.staff) {
+      this.user.userTz = newPassWord;
+      return this.http.post<any>(this.baseURL + "/user/change-password", this.user);
+    }
+    else{
+      this.teacher.userTz=newPassWord;
+      return this.http.post<any>(this.baseURL + "/user/change-password", this.teacher);
+    }
   }
 
-  updatePass(newPassWord): Observable<boolean> {
-
-    this.user.userTz = newPassWord;
-    return this.http.post<boolean>(this.baseURL + " ", this.user);
+  getTeacher(): Observable<User> {
+    return this.http.get<User>(this.baseURL + "/user/get-teacher");
   }
 
-  getDepositsForUser(): Observable<Deposit[]> {
-    return this.http.post<Deposit[]>(this.baseURL + "/deposit/get-deposits-by-userID", this.user.userId)
+  upLoad(files): Observable<any> {
+    var fd = new FormData();
+    fd.append("file", files[0]);
+    return this.http.post<any>(this.baseURL + "/read-excel/test", fd)
   }
 }

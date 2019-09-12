@@ -8,4 +8,8 @@ table {
   .prev{
     margin-left: 60px;
   }
-  
+  th{
+    font-size: medium;
+    background-color: #e85a61;
+    color: white;
+  }

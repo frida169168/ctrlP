@@ -108,7 +108,4 @@ export class SheetSettingComponent implements OnInit {
       }
     });
   }
-  prev(){
-    this.route.navigate(['loadingStaff'])
-  }
 }

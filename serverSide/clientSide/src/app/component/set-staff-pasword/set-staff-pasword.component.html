@@ -2,29 +2,44 @@
   <mat-icon>arrow_back_ios</mat-icon>חזור
 </a>
 
-<div class="box">
-  <form (ngSubmit)="chanagePass()">
-    <mat-form-field appearance="outline">
-      <mat-label>סיסמא ישנה</mat-label>
-      <input matInput type="password" name="oldPass" [(ngModel)]="oldPass" #oldPass1>
-      {{oldPass1.touched}}
-    </mat-form-field>
+<div class="warp">
+  <mat-form-field class="option">
+    <mat-label>אפשרויות שינוי סיסמה</mat-label>
+    <mat-select [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let op of option" [value]="op.value">
+        {{op.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="box">
+    <form (ngSubmit)="chanagePass()" #PassForm="ngForm">
+
+      <mat-form-field appearance="outline">
+        <mat-label>סיסמה ישנה</mat-label>
+        <input type="password" matInput name="oldPass" [disabled]="selectedValue==null" [(ngModel)]="oldPass" #oldPass1
+          required>
+      </mat-form-field>
+
+      <div class="warning" *ngIf="!isPassCorect()&&oldPass!=null">סיסמה שגויה</div>
+
+      <mat-form-field appearance="outline">
+        <mat-label>סיסמה חדשה</mat-label>
+        <input type="password" matInput required [(ngModel)]="newPass" name="newPass" #newPass1="ngModel"
+          [disabled]="!isPassCorect()">
+      </mat-form-field>
 
 
-    <span class="password-validation-error" data-bind="text: OldPasswordError, visible: !OldPasswordValid()"></span>
-    <mat-form-field appearance="outline">
-      <mat-label>סיסמא חדשה</mat-label>
-      <input type="password" matInput [disabled]="!oldPass1.touched&&!isPassCorect()" required [(ngModel)]="newPass"
-        name="newPass" #newPass1="ngModel">
-    </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>שוב סיסמה חדשה</mat-label>
+        <input type="password" matInput name="checkNewPass" [(ngModel)]="checkNewPass" required
+          [disabled]="!newPass1.valid">
+      </mat-form-field>
 
-    <div *ngIf="newPass1.errors?.minlength">fhgdd</div>
-    <mat-form-field appearance="outline">
-      <mat-label>שוב סיסמא חדשה</mat-label>
-      <input type="password" matInput [disabled]="!newPass1.valid" name="checkNewPass" [(ngModel)]="checkNewPass">
-       
-    </mat-form-field>
+      <div class="warning" *ngIf="newPass!=checkNewPass&&checkNewPass!=null">סיסמאות לא תואמות</div>
 
-    <button type="submit" mat-flat-button class="bt">עדכן</button>
-  </form>
+      <button type="submit" mat-flat-button class="bt"
+        [disabled]="!PassForm.form.valid||newPass!=checkNewPass">עדכן</button>
+    </form>
+  </div>
 </div>

@@ -77,6 +77,7 @@ export class LoadingStaffComponent implements OnInit {
       ));
     }
     this.dataSource = new MatTableDataSource<StudentWithSpecs>(value);
+    this.dataSource.paginator = this.paginator;
   }
 
 
@@ -133,12 +134,16 @@ export class LoadingStaffComponent implements OnInit {
       this.deposit=new Deposit;
       this.deposit.userId=element.userId;
       this.deposit.depositAmount=this.depositAmount;
-      this.deposits.push(this.deposit);      
+      this.deposits.push(this.deposit);
+      element.balance+=this.depositAmount;           
     });;
    this.userServ.depositForStudents(this.deposits).subscribe(res=>{alert("נטען בהצלחה")},err=>{})
+   this.searchTxt=null;
+   this.specSearch=null;
+   this.depositAmount=null;
+   this.selection.clear();
   }
-
-  signOut(){
-    this.route.navigate(['']);
+  buttonState(){
+    return this.selection.selected.length==0;
   }
 }

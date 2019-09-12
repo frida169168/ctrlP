@@ -160,8 +160,8 @@ E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\Entities.dll.config
 E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\DocumentFormat.OpenXml.xml
 E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.xml
 E:\FinalProject\Git_Repository\serverSide\BL\bin\Debug\EntityFramework.SqlServer.xml
-E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csproj.CopyComplete
 E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.dll
 E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.pdb
+E:\FinalProject\Git_Repository\serverSide\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache

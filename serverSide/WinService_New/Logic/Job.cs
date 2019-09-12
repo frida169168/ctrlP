@@ -73,7 +73,7 @@ namespace Logic
 
         public void OpenWinForm(string machineName, string message = "")
         {
-            string path = ConfigurationManager.AppSettings["PathToWinForm"] + " " + response;
+            string path = ConfigurationManager.AppSettings["PathToWinForm"] + " " + message;
 
             var proc = new Process
             {
@@ -89,8 +89,10 @@ namespace Logic
 
             proc.Start();
             proc.WaitForExit();
-            this.UserTz = proc.ExitCode.ToString();
+            if (message == null)
+                UserTz = proc.ExitCode.ToString();
         }
+
         public async Task<string> ConnectToServer(string route)
         {
             using (var client = new HttpClient())
@@ -107,16 +109,14 @@ namespace Logic
 
 
 
-      
-
         public static void PromotionalAccount(int jobId)//מחזירה את הסכום למשתמש שהדפסתו בוטלה
         {//to do :  write function in the server
-            Task.Run(() => RunAsync(""));
+            Task.Run(() => ConnectToServer(""));
         }
 
         public string CheckPrintPermissions()
         {// לשנות את שם הפונקציה בserver
-            return Task.Run(() => RunAsync("/user/check-print-permissions")).Result;
+            return Task.Run(() => ConnectToServer("/user/check-print-permissions")).Result;
         }
 
         public static void PauseJob(int jobId)

@@ -9,7 +9,7 @@ using DTO;
 
 namespace BL
 {
-   public static class DepositLogic
+    public static class DepositLogic
     {
         public static controlPrintEntities db = new controlPrintEntities();
         ////מחזיר רשימת הפקדות לפי ת"ז
@@ -20,28 +20,36 @@ namespace BL
         //    return deposits;
         //}
 
-        
+
         public static List<DepositDTO> GetDeposits()
         {
+            db = new controlPrintEntities();
             List<DepositDTO> deposits = new List<DepositDTO>();
             db.Deposits.ToList().ForEach(w => deposits.Add(DepositCast.CastToDTO(w)));
+
+            deposits.ForEach(d => { User u2 = db.Users.Where(u => u.userId == d.userId).FirstOrDefault(); d.userName = u2.userName; d.userTz = u2.userTz; });
             return deposits;
         }
 
         public static double? NewDeposit(DepositDTO depositDTO)
         {
-            
+
             db.Deposits.Add(DepositCast.CastToDAL(depositDTO));
             try
             {
                 db.SaveChanges();
-               return depositDTO.depositAmount;
+                return depositDTO.depositAmount;
             }
 
             catch
             {
                 return 0;
             }
+        }
+        public static void deleteDeposit(DepositDTO depositDTO)
+        {
+            db.Deposits.Remove(db.Deposits.First(d => d.depositId == depositDTO.depositId));
+            db.SaveChanges();
         }
 
     }

@@ -1,7 +1,6 @@
-<div class="upload">
-  <label>קובץ תלמידות</label>
-  <mat-file-upload></mat-file-upload>
-  <br>
-  <label>קובץ התמחויות</label>
-  <mat-file-upload></mat-file-upload>
-</div>
+<mat-file-upload
+  [labelText]="'בחרי קובץ התמחויות'"
+  [allowMultipleFiles]="false"
+  [showUploadButton]="true"
+  (uploadClicked)="onUploadClicked($event)">
+</mat-file-upload>

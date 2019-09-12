@@ -1,0 +1,49 @@
+<table mat-table [dataSource]="depositList" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+                [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+            </mat-checkbox>
+        </th>
+        <td mat-cell *matCellDef="let row">
+            <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> תאריך הפקדה </th>
+        <td mat-cell *matCellDef="let element"> {{element.depositDate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="tz">
+        <th mat-header-cell *matHeaderCellDef> ת.ז. </th>
+        <td mat-cell *matCellDef="let element"> {{element.userTz}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> שם </th>
+        <td mat-cell *matCellDef="let element"> {{element.userName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="amount">
+        <th mat-header-cell *matHeaderCellDef> סכום הפקדה </th>
+        <td mat-cell *matCellDef="let element"> {{element.depositAmount}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="deleteIcon" stickyEnd>
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+
+            <button mat-icon-button (click)="deleteDeposit(element)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+</table>

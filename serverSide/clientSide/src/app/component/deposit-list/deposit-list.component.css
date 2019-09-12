@@ -1,0 +1,9 @@
+table {
+    width: 80%;
+    margin:auto;
+  }
+  th{
+    font-size: medium;      
+    background-color: #e85a61;
+    color: white;     
+  }

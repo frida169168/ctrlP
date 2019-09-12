@@ -26,6 +26,7 @@ namespace BL
 
         public static double? getBalanceByUser(UserDTO user)
         {
+            db = new controlPrintEntities();
             if (user != null)
             {
                 double? depositSum = db.Users.FirstOrDefault(u => u.userId == user.userId).Deposits.ToList().Sum(d => d.depositAmount);
@@ -44,6 +45,7 @@ namespace BL
 
         public static List<StudentWithSpecDTO> GetStudentsWithSpecs()
         {
+
             List<StudentWithSpecDTO> usersWithSpecs = new List<StudentWithSpecDTO>();
             db.Users.ToList().Where(u => UserCast.CastToDTO(u).entityTypeId == DTO.Type.student).ToList().ForEach(u2 =>
             {
@@ -64,6 +66,16 @@ namespace BL
             });
             return usersWithSpecs;
 
+        }
+        public static void ChangePassword(UserDTO userDTO)
+        {
+            User user = UserCast.CastToDAL(userDTO);
+            db.Users.FirstOrDefault(u => u.userId == user.userId).userTz = userDTO.userTz;
+            db.SaveChanges();
+        }
+        public static UserDTO GetTeacher()
+        {
+            return UserCast.CastToDTO(db.Users.FirstOrDefault(u => u.entityTypeId == (int)DTO.Type.teacher));
         }
     }
 }

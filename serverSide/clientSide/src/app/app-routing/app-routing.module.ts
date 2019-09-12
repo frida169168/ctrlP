@@ -9,6 +9,7 @@ import { LoadingStaffComponent } from '../component/loading-staff/loading-staff.
 import { SetStaffPaswordComponent } from '../component/set-staff-pasword/set-staff-pasword.component';
 import { ViewPrintHistoryComponent } from '../component/view-print-history/view-print-history.component';
 import { AddSheetComponent } from '../component/add-sheet/add-sheet.component';
+import { DepositListComponent } from '../component/deposit-list/deposit-list.component';
 
 
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'loadingStaff', component:LoadingStaffComponent},
   { path: 'setStaffPasword',component:SetStaffPaswordComponent},
   { path: 'viewPrintHistory',component:ViewPrintHistoryComponent},
+  { path: 'depositList',component:DepositListComponent}
 
 ];
 

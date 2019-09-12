@@ -31,7 +31,7 @@ namespace WebServiceControlPrint.Controllers
         //    }
 
 
-        [HttpPost]
+        [HttpGet]
         [Route("get-deposits")]
         public HttpResponseMessage GetDeposits()
         {
@@ -60,6 +60,15 @@ namespace WebServiceControlPrint.Controllers
             {
                 DepositLogic.NewDeposit(item);
             }
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
+        [HttpPost]
+        [Route("delete-deposit")]
+        public HttpResponseMessage DeleteDeposit(DepositDTO depositDTO)
+        {
+
+            DepositLogic.deleteDeposit(depositDTO);
             return Request.CreateResponse(HttpStatusCode.OK);
         }
     }

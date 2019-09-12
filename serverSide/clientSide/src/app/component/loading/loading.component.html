@@ -13,7 +13,7 @@
     <form class="login-form" #loginForm="ngForm" (ngSubmit)="onLoad()">
         <mat-form-field class="example-full-width" appearance="outline">
             <mat-label>הכניסי סכום</mat-label>
-            <input type="number" matInput name="amount" [value]="inputDeposit" [(ngModel)]="deposit.depositAmount"  required >
+            <input type="number" pattern="^(\d*)\.?\d$" matInput name="amount" [value]="inputDeposit" [(ngModel)]="deposit.depositAmount" required >
         </mat-form-field>
         <button type="submit" mat-flat-button [disabled]="!loginForm.form.valid">טען</button>
     </form>

@@ -717,8 +717,8 @@ E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\bin\Newtonsoft.
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\bin\System.Web.Http.WebHost.xml
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\bin\DocumentFormat.OpenXml.xml
-E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojResolveAssemblyReference.cache
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CoreCompileInputs.cache
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csproj.CopyComplete
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.dll
 E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.pdb
+E:\FinalProject\Git_Repository\serverSide\WebServiceControlPrint\obj\Debug\WebServiceControlPrint.csprojResolveAssemblyReference.cache

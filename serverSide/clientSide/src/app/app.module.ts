@@ -22,6 +22,7 @@ import { DeleteSheetComponent } from './component/delete-sheet/delete-sheet.comp
 import { AddSheetComponent } from './component/add-sheet/add-sheet.component';
 import { ViewPrintHistoryComponent } from './component/view-print-history/view-print-history.component';
 import { MatFileUploadModule } from 'mat-file-upload'
+//import { MatFileUploadModule } from 'angular-material-fileupload';
 import { CommonModule } from '@angular/common';
  
 import { ToastrModule } from 'ngx-toastr';
@@ -66,6 +67,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatPaginatorModule,
     MatMenuModule,
     MatFileUploadModule,
+    
     CommonModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot() 

@@ -29,8 +29,8 @@
     <mat-form-field class="example-full-width">
       <input type="text" [(ngModel)]="searchTxt" (ngModelChange)="filterData()" placeholder="שם תלמידה" matInput
         [formControl]="myControl">
-
     </mat-form-field>
+
     <mat-form-field>
       <mat-label>התמחות</mat-label>
       <mat-select [formControl]="multiSpec" (ngModelChange)="filterData()" multiple [(ngModel)]="specSearch">
@@ -42,11 +42,10 @@
   <div class="example-container">
     <form #Form="ngForm">
       <mat-form-field>
-        <input type="number" matInput placeholder="סכום לטעינה" name="amountStaff" [(ngModel)]="depositAmount"
-          ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" required>
+        <input type="number" matInput placeholder="סכום לטעינה" name="amountStaff" [(ngModel)]="depositAmount" pattern="^(\d*)\.?\d$" required>
         <span matPrefix>&#8362;</span>
       </mat-form-field>
-      <button mat-flat-button (click)="onCharging()" class="bt" [disabled]="!Form.form.valid">טען</button>
+      <button mat-flat-button (click)="onCharging()" class="bt" [disabled]="!Form.form.valid||buttonState()">טען</button>
     </form>
   </div>
 </div>
@@ -112,5 +111,5 @@
 
   </table>
 
-  <mat-paginator [pageSize]="20" [pageSizeOptions]="[20, 50, 70]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSize]="6" [pageSizeOptions]="[6,10, 15,20]" showFirstLastButtons></mat-paginator>
 </div>
